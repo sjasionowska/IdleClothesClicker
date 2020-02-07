@@ -1,26 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 using UnityEngine.UI;
 
 public class MoneyAmount : MonoBehaviour
 {
-    public Text moneyUiText;
-    private static int amount;
+	public Text moneyUiText;
 
-    private void Awake()
-    {
-        TshirtManager.Sold += AddMoney;
-        moneyUiText.text = amount.ToString();
-    }
+	private static int amount;
 
-    private void OnDestroy()
-    {
-        TshirtManager.Sold -= AddMoney;
-    }
+	private Store store;
 
-    public void AddMoney(int moneyToAdd)
-    {
-        amount += moneyToAdd;
-    }
+	private void Awake()
+	{
+		store = FindObjectOfType<Store>();
+		store.AllTshirtsSold += AddMoney;
+		moneyUiText.text = amount.ToString();
+	}
+
+	private void OnDestroy()
+	{
+		store.AllTshirtsSold -= AddMoney;
+	}
+
+	public void AddMoney(int amountOfMadeItems, int amountToAdd)
+	{
+		AddMoney(amountToAdd);
+	}
+
+	public void AddMoney(int moneyToAdd)
+	{
+		amount += moneyToAdd;
+		moneyUiText.text = amount.ToString();
+	}
 }

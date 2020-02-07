@@ -4,15 +4,21 @@ using UnityEngine;
 
 public class GlobalTshirts : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private int tshirtAmountMade;
+    private int priceToSell;
+    private int level = 1;
+    
+    public int TshirtAmountMade
     {
-        
+        get => tshirtAmountMade;
+        private set => tshirtAmountMade = value;
     }
 
-    // Update is called once per frame
-    void Update()
+    public int PriceToSell
     {
-        
+        get => priceToSell;
+        private set => priceToSell = value;
     }
+
+    
 }
