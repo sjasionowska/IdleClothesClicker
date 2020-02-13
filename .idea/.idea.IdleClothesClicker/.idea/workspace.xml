@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba9e4c4-1100-4e67-bc2b-2e85026df5d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/GlobalTshirts.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GlobalTshirts.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MoneyAmount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MoneyAmount.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlobalMoney.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlobalMoney.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlobalTshirts.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GlobalTshirts.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoneyAmount.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MoneyAmount.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TshirtAmount.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TshirtAmount.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TshirtManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TshirtManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Store.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Store.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TshirtAmount.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TshirtAmount.cs.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,81 +24,110 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+              <folding>
+                <marker date="1581625307719" expanded="false" signature="6:101" ph="..." />
+                <marker date="1581625307719" expanded="true" signature="146:629" ph="{...}" />
+                <marker date="1581625307719" expanded="true" signature="331:439" ph="{...}" />
+                <marker date="1581625307719" expanded="true" signature="503:534" ph="{...}" />
+                <marker date="1581625307719" expanded="true" signature="573:627" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Store.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsDisplayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="34" />
+            <state relative-caret-position="161">
+              <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-end-line="11" />
               <folding>
-                <marker date="1581100927548" expanded="false" signature="6:33" ph="..." />
-                <marker date="1581100927548" expanded="true" signature="69:907" ph="{...}" />
-                <marker date="1581100927548" expanded="true" signature="188:272" ph="{...}" />
-                <marker date="1581100927548" expanded="true" signature="300:384" ph="{...}" />
-                <marker date="1581100927548" expanded="true" signature="410:451" ph="{...}" />
-                <marker date="1581100927548" expanded="true" signature="554:595" ph="///  ... " />
-                <marker date="1581100927548" expanded="true" signature="618:752" ph="{...}" />
-                <marker date="1581100927548" expanded="true" signature="758:799" ph="///  ... " />
-                <marker date="1581100927548" expanded="true" signature="831:900" ph="{...}" />
+                <marker date="1581625290566" expanded="false" signature="6:55" ph="..." />
+                <marker date="1581625290566" expanded="true" signature="57:143" ph="/// Responsible for displaying amount of Tshirts on Scene ... " />
+                <marker date="1581625290566" expanded="true" signature="189:760" ph="{...}" />
+                <marker date="1581625290566" expanded="true" signature="320:351" ph="{...}" />
+                <marker date="1581625290566" expanded="true" signature="374:537" ph="{...}" />
+                <marker date="1581625290566" expanded="true" signature="564:606" ph="{...}" />
+                <marker date="1581625290566" expanded="true" signature="631:758" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/TshirtAmount.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+            <state relative-caret-position="207">
+              <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
               <folding>
-                <marker date="1581101035390" expanded="false" signature="6:55" ph="..." />
-                <marker date="1581101035390" expanded="true" signature="98:1146" ph="{...}" />
-                <marker date="1581101035390" expanded="true" signature="188:244" ph="{...}" />
-                <marker date="1581101035390" expanded="true" signature="292:511" ph="{...}" />
-                <marker date="1581101035390" expanded="true" signature="538:643" ph="{...}" />
-                <marker date="1581101035390" expanded="true" signature="693:799" ph="{...}" />
-                <marker date="1581101035390" expanded="true" signature="877:924" ph="{...}" />
-                <marker date="1581101035390" expanded="true" signature="980:1144" ph="{...}" />
+                <marker date="1581624866422" expanded="true" signature="61:720" ph="{...}" />
+                <marker date="1581624866422" expanded="true" signature="110:166" ph="///  ... " />
+                <marker date="1581624866422" expanded="true" signature="185:410" ph="{...}" />
+                <marker date="1581624866422" expanded="true" signature="219:407" ph="{...}" />
+                <marker date="1581624866422" expanded="true" signature="433:524" ph="{...}" />
+                <marker date="1581624866422" expanded="true" signature="551:591" ph="{...}" />
+                <marker date="1581624866422" expanded="true" signature="633:718" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/94/3f3d5efa/BaseInputModule.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/MoneyAmount.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+            <state relative-caret-position="-31">
+              <caret line="46" column="70" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
               <folding>
-                <marker date="1581100999152" expanded="false" signature="6:101" ph="..." />
-                <marker date="1581100999152" expanded="true" signature="143:639" ph="{...}" />
-                <marker date="1581100999152" expanded="true" signature="246:365" ph="{...}" />
-                <marker date="1581100999152" expanded="true" signature="392:434" ph="{...}" />
-                <marker date="1581100999152" expanded="true" signature="497:528" ph="{...}" />
-                <marker date="1581100999152" expanded="true" signature="567:637" ph="{...}" />
+                <marker date="1581623308469" expanded="false" signature="6:55" ph="..." />
+                <marker date="1581623308469" expanded="true" signature="102:1591" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="105:686" ph="Public Properties" />
+                <marker date="1581623308469" expanded="true" signature="132:245" ph="/// Level of Clothes. The higher it is, the more units are made in the background. ... " />
+                <marker date="1581623308469" expanded="true" signature="263:317" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="320:386" ph="/// Amount of Clothes made / owned. ... " />
+                <marker date="1581623308469" expanded="true" signature="405:461" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="464:529" ph="/// Price for one item of Clothes. ... " />
+                <marker date="1581623308469" expanded="true" signature="547:634" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="556:599" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="658:675" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="689:786" ph="///  ... " />
+                <marker date="1581623308469" expanded="true" signature="1110:1220" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="1249:1369" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="1392:1435" ph="{...}" />
+                <marker date="1581623308469" expanded="true" signature="1458:1558" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/GlobalTshirts.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+            <state>
+              <caret column="32" selection-start-column="32" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="156">
+              <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
               <folding>
-                <marker date="1581097652224" expanded="false" signature="6:78" ph="..." />
-                <marker date="1581097652224" expanded="true" signature="122:465" ph="{...}" />
-                <marker date="1581097652224" expanded="true" signature="251:345" ph="{...}" />
-                <marker date="1581097652224" expanded="true" signature="373:457" ph="{...}" />
+                <marker date="1581624778636" expanded="false" signature="6:67" ph="..." />
+                <marker date="1581624778636" expanded="true" signature="103:1014" ph="{...}" />
+                <marker date="1581624778636" expanded="true" signature="107:205" ph="///  ... " />
+                <marker date="1581624778636" expanded="true" signature="291:412" ph="/// Action invoked when some money is earned with parameter sending amount of earned money ... " />
+                <marker date="1581624778636" expanded="true" signature="586:710" ph="{...}" />
+                <marker date="1581624778636" expanded="true" signature="640:707" ph="{...}" />
+                <marker date="1581624778636" expanded="true" signature="758:836" ph="{...}" />
+                <marker date="1581624778636" expanded="true" signature="863:968" ph="{...}" />
+                <marker date="1581624778636" expanded="true" signature="898:965" ph="{...}" />
+                <marker date="1581624778636" expanded="true" signature="1003:1012" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -108,15 +144,16 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Store.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/de/829fe904/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F404566-610E-4C41-BFFA-144D0CF535AC/67/e628b617/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/MoneyAmount.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GlobalTshirts.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/GlobalMoney.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F404566-610E-4C41-BFFA-144D0CF535AC/42/fa771c49/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/TshirtAmount.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/94/3f3d5efa/BaseInputModule.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/de/829fe904/Text.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F404566-610E-4C41-BFFA-144D0CF535AC/42/fa771c49/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -125,9 +162,29 @@
         <option value="$PROJECT_DIR$/Assets/ItemAmount.cs" />
         <option value="$PROJECT_DIR$/Assets/GlobalTshirts.cs" />
         <option value="$PROJECT_DIR$/Assets/TshirtManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Store.cs" />
         <option value="$PROJECT_DIR$/Assets/MoneyAmount.cs" />
         <option value="$PROJECT_DIR$/Assets/TshirtAmount.cs" />
+        <option value="$PROJECT_DIR$/Assets/Store.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyAmount.cs" />
+        <option value="$PROJECT_DIR$/Assets/GameController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Items.cs" />
+        <option value="$PROJECT_DIR$/Assets/StoreManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/StorageManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Clothes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Tshirts.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TshirtAmount.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TshirtDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Store.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TshirtsDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Money.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MoneyDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsDisplayer.cs" />
       </list>
     </option>
   </component>
@@ -143,6 +200,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
       <pane id="AssemblyExplorer" />
       <pane id="UnityExplorer">
         <subPane>
@@ -151,15 +212,35 @@
               <item name="Project" type="e068e287:UnityExplorerRootNode" />
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Clothes" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Managers" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="Managers" type="1045f7f1:UnityExplorerNode" />
+              <item name="Money" type="1045f7f1:UnityExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
-      </pane>
-      <pane id="FileSystemExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
       </pane>
     </panes>
   </component>
@@ -191,10 +272,10 @@
       <option name="pid" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="16693">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" pid="15170">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="16693" />
+      <option name="pid" value="15170" />
       <method v="2" />
     </configuration>
   </component>
@@ -210,12 +291,16 @@
       <updated>1580658363424</updated>
       <workItem from="1580658366462" duration="1525000" />
       <workItem from="1580660015571" duration="3303000" />
-      <workItem from="1581097251396" duration="3340000" />
+      <workItem from="1581097251396" duration="4174000" />
+      <workItem from="1581175863334" duration="1630000" />
+      <workItem from="1581179577424" duration="5719000" />
+      <workItem from="1581313936272" duration="33000" />
+      <workItem from="1581616642398" duration="5546000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8168000" />
+    <option name="totallyTimeSpent" value="21930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -230,13 +315,13 @@
     <frame x="56" y="23" width="1384" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25707898" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27123696" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32884097" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -271,74 +356,49 @@
           <option name="timeStamp" value="1" />
         </breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/TshirtAmount.cs</url>
-          <line>40</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/TshirtAmount.cs" initialLine="43">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsDisplayer.cs</url>
+          <line>22</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/TshirtsDisplayer.cs" initialLine="19">
             <startOffsets>
-              <option value="879" />
+              <option value="376" />
             </startOffsets>
             <endOffsets>
-              <option value="880" />
+              <option value="377" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="15" />
+          <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/Store.cs</url>
-          <line>37</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/TshirtManager.cs" initialLine="37">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs</url>
+          <line>77</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" initialLine="74">
             <startOffsets>
-              <option value="679" />
+              <option value="1251" />
             </startOffsets>
             <endOffsets>
-              <option value="721" />
+              <option value="1252" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="16" />
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/MoneyAmount.cs</url>
-          <line>27</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/MoneyAmount.cs" initialLine="26">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsDisplayer.cs</url>
+          <line>33</line>
+          <properties documentPath="$PROJECT_DIR$/Assets/Scripts/TshirtsDisplayer.cs" initialLine="31">
             <startOffsets>
-              <option value="499" />
+              <option value="633" />
             </startOffsets>
             <endOffsets>
-              <option value="500" />
+              <option value="634" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/Assets/MoneyAmount.cs</url>
-          <line>32</line>
-          <properties documentPath="$PROJECT_DIR$/Assets/MoneyAmount.cs" initialLine="31">
-            <startOffsets>
-              <option value="569" />
-            </startOffsets>
-            <endOffsets>
-              <option value="570" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="18" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/GlobalMoney.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <marker date="1580661742940" expanded="false" signature="6:78" ph="..." />
-            <marker date="1580661742940" expanded="true" signature="120:294" ph="{...}" />
-            <marker date="1580661742940" expanded="true" signature="192:213" ph="{...}" />
-            <marker date="1580661742940" expanded="true" signature="271:292" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/GlobalMoney.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/de/829fe904/Text.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
@@ -471,13 +531,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/94/3f3d5efa/BaseInputModule.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F404566-610E-4C41-BFFA-144D0CF535AC/67/e628b617/UnityEvent.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
@@ -492,65 +545,133 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/GlobalTshirts.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/GlobalTshirts.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/MoneyAmount.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/TshirtAmount.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Store.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/GameController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="22" column="4" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+        <state relative-caret-position="138">
+          <caret line="8" column="4" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="4" />
           <folding>
-            <marker date="1581097652224" expanded="false" signature="6:78" ph="..." />
-            <marker date="1581097652224" expanded="true" signature="122:465" ph="{...}" />
-            <marker date="1581097652224" expanded="true" signature="251:345" ph="{...}" />
-            <marker date="1581097652224" expanded="true" signature="373:457" ph="{...}" />
+            <marker date="1581272350975" expanded="false" signature="6:78" ph="..." />
+            <marker date="1581272350975" expanded="true" signature="123:283" ph="{...}" />
+            <marker date="1581272350975" expanded="true" signature="215:236" ph="{...}" />
+            <marker date="1581272350975" expanded="true" signature="254:275" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/MoneyAmount.cs">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/94/3f3d5efa/BaseInputModule.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="18" column="45" lean-forward="true" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
+        <state relative-caret-position="136">
+          <caret line="79" column="6" selection-start-line="79" selection-start-column="6" selection-end-line="79" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/StoreManager.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/StorageManager.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31">
+          <caret line="46" column="70" selection-start-line="46" selection-start-column="70" selection-end-line="46" selection-end-column="70" />
           <folding>
-            <marker date="1581100999152" expanded="false" signature="6:101" ph="..." />
-            <marker date="1581100999152" expanded="true" signature="143:639" ph="{...}" />
-            <marker date="1581100999152" expanded="true" signature="246:365" ph="{...}" />
-            <marker date="1581100999152" expanded="true" signature="392:434" ph="{...}" />
-            <marker date="1581100999152" expanded="true" signature="497:528" ph="{...}" />
-            <marker date="1581100999152" expanded="true" signature="567:637" ph="{...}" />
+            <marker date="1581623308469" expanded="false" signature="6:55" ph="..." />
+            <marker date="1581623308469" expanded="true" signature="102:1591" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="105:686" ph="Public Properties" />
+            <marker date="1581623308469" expanded="true" signature="132:245" ph="/// Level of Clothes. The higher it is, the more units are made in the background. ... " />
+            <marker date="1581623308469" expanded="true" signature="263:317" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="320:386" ph="/// Amount of Clothes made / owned. ... " />
+            <marker date="1581623308469" expanded="true" signature="405:461" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="464:529" ph="/// Price for one item of Clothes. ... " />
+            <marker date="1581623308469" expanded="true" signature="547:634" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="556:599" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="658:675" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="689:786" ph="///  ... " />
+            <marker date="1581623308469" expanded="true" signature="1110:1220" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="1249:1369" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="1392:1435" ph="{...}" />
+            <marker date="1581623308469" expanded="true" signature="1458:1558" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/TshirtAmount.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="327">
-          <caret line="19" column="24" lean-forward="true" selection-start-line="19" selection-start-column="24" selection-end-line="19" selection-end-column="24" />
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
           <folding>
-            <marker date="1581101035390" expanded="false" signature="6:55" ph="..." />
-            <marker date="1581101035390" expanded="true" signature="98:1146" ph="{...}" />
-            <marker date="1581101035390" expanded="true" signature="188:244" ph="{...}" />
-            <marker date="1581101035390" expanded="true" signature="292:511" ph="{...}" />
-            <marker date="1581101035390" expanded="true" signature="538:643" ph="{...}" />
-            <marker date="1581101035390" expanded="true" signature="693:799" ph="{...}" />
-            <marker date="1581101035390" expanded="true" signature="877:924" ph="{...}" />
-            <marker date="1581101035390" expanded="true" signature="980:1144" ph="{...}" />
+            <marker date="1581624778636" expanded="false" signature="6:67" ph="..." />
+            <marker date="1581624778636" expanded="true" signature="103:1014" ph="{...}" />
+            <marker date="1581624778636" expanded="true" signature="107:205" ph="///  ... " />
+            <marker date="1581624778636" expanded="true" signature="291:412" ph="/// Action invoked when some money is earned with parameter sending amount of earned money ... " />
+            <marker date="1581624778636" expanded="true" signature="586:710" ph="{...}" />
+            <marker date="1581624778636" expanded="true" signature="640:707" ph="{...}" />
+            <marker date="1581624778636" expanded="true" signature="758:836" ph="{...}" />
+            <marker date="1581624778636" expanded="true" signature="863:968" ph="{...}" />
+            <marker date="1581624778636" expanded="true" signature="898:965" ph="{...}" />
+            <marker date="1581624778636" expanded="true" signature="1003:1012" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Store.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="34" />
+        <state relative-caret-position="207">
+          <caret line="29" column="5" lean-forward="true" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
           <folding>
-            <marker date="1581100927548" expanded="false" signature="6:33" ph="..." />
-            <marker date="1581100927548" expanded="true" signature="69:907" ph="{...}" />
-            <marker date="1581100927548" expanded="true" signature="188:272" ph="{...}" />
-            <marker date="1581100927548" expanded="true" signature="300:384" ph="{...}" />
-            <marker date="1581100927548" expanded="true" signature="410:451" ph="{...}" />
-            <marker date="1581100927548" expanded="true" signature="554:595" ph="///  ... " />
-            <marker date="1581100927548" expanded="true" signature="618:752" ph="{...}" />
-            <marker date="1581100927548" expanded="true" signature="758:799" ph="///  ... " />
-            <marker date="1581100927548" expanded="true" signature="831:900" ph="{...}" />
+            <marker date="1581624866422" expanded="true" signature="61:720" ph="{...}" />
+            <marker date="1581624866422" expanded="true" signature="110:166" ph="///  ... " />
+            <marker date="1581624866422" expanded="true" signature="185:410" ph="{...}" />
+            <marker date="1581624866422" expanded="true" signature="219:407" ph="{...}" />
+            <marker date="1581624866422" expanded="true" signature="433:524" ph="{...}" />
+            <marker date="1581624866422" expanded="true" signature="551:591" ph="{...}" />
+            <marker date="1581624866422" expanded="true" signature="633:718" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="22" column="18" lean-forward="true" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+          <folding>
+            <marker date="1581625307719" expanded="false" signature="6:101" ph="..." />
+            <marker date="1581625307719" expanded="true" signature="146:629" ph="{...}" />
+            <marker date="1581625307719" expanded="true" signature="331:439" ph="{...}" />
+            <marker date="1581625307719" expanded="true" signature="503:534" ph="{...}" />
+            <marker date="1581625307719" expanded="true" signature="573:627" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsDisplayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="20" lean-forward="true" selection-start-line="10" selection-end-line="11" />
+          <folding>
+            <marker date="1581625290566" expanded="false" signature="6:55" ph="..." />
+            <marker date="1581625290566" expanded="true" signature="57:143" ph="/// Responsible for displaying amount of Tshirts on Scene ... " />
+            <marker date="1581625290566" expanded="true" signature="189:760" ph="{...}" />
+            <marker date="1581625290566" expanded="true" signature="320:351" ph="{...}" />
+            <marker date="1581625290566" expanded="true" signature="374:537" ph="{...}" />
+            <marker date="1581625290566" expanded="true" signature="564:606" ph="{...}" />
+            <marker date="1581625290566" expanded="true" signature="631:758" ph="{...}" />
           </folding>
         </state>
       </provider>

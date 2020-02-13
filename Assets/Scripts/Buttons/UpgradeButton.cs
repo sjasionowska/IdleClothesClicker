@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GlobalMoney : MonoBehaviour
+public class UpgradeButton : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()

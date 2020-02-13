@@ -9,11 +9,23 @@
       <e p=".git/info/exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="GlobalMoney.cs" t="Include" />
-        <e p="GlobalTshirts.cs" t="Include" />
-        <e p="MoneyAmount.cs" t="Include" />
-        <e p="Store.cs" t="Include" />
-        <e p="TshirtAmount.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Buttons" t="Include">
+            <e p="UpgradeButton.cs" t="Include" />
+          </e>
+          <e p="Clothes" t="Include">
+            <e p="Clothes.cs" t="Include" />
+            <e p="Tshirts.cs" t="Include" />
+            <e p="TshirtsDisplayer.cs" t="Include" />
+          </e>
+          <e p="Managers" t="Include">
+            <e p="Money" t="Include">
+              <e p="MoneyDisplayer.cs" t="Include" />
+              <e p="MoneyManager.cs" t="Include" />
+            </e>
+            <e p="Store.cs" t="Include" />
+          </e>
+        </e>
       </e>
       <e p="IdleClothesClicker.sln" t="IncludeFlat" />
       <e p="Library" t="ExcludeRecursive" />

@@ -267,18 +267,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 113519629}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 244218716}
-        m_MethodName: Sell
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &113519629
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -545,9 +534,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 244218712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5800d9ee4ed094d35a7c29349a6687f4, type: 3}
+  m_Script: {fileID: 11500000, guid: 2916c61502c046fcb41d92fa29e40dd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sellButton: {fileID: 113519628}
+  makeItemButton: {fileID: 843869572}
 --- !u!1 &299569715
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,37 +747,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 645141897}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 834d51e48692240cf8dd458fecc04397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_DisabledTrigger: Disabled
-  m_Interactable: 0
-  m_TargetGraphic: {fileID: 645141900}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls: []
 --- !u!114 &645141900
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +862,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 657547417}
   m_CullTransparentMesh: 0
+--- !u!1 &709785815
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709785817}
+  - component: {fileID: 709785816}
+  m_Layer: 0
+  m_Name: MoneyManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &709785816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709785815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b93c75461a04d068ea9cfa5cbbc06ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &709785817
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709785815}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 196.56659, y: 98.1225, z: -0.6038347}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &827498489
 GameObject:
   m_ObjectHideFlags: 0
@@ -929,9 +935,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1939373108}
-  - {fileID: 1615520992}
   - {fileID: 1119469636}
-  - {fileID: 1426962473}
   m_Father: {fileID: 244218713}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -988,7 +992,7 @@ GameObject:
   - component: {fileID: 843869573}
   - component: {fileID: 843869572}
   m_Layer: 5
-  m_Name: Tshirt button
+  m_Name: MakeTshirtButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1053,19 +1057,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 244218716}
-        m_MethodName: AddTshirtMade
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1615520995}
-        m_MethodName: AddItemAmount
+        m_MethodName: AddAmountOfTshirts
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1110,6 +1103,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 843869570}
   m_CullTransparentMesh: 0
+--- !u!1 &923330208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 923330210}
+  - component: {fileID: 923330209}
+  m_Layer: 0
+  m_Name: StoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &923330209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923330208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5800d9ee4ed094d35a7c29349a6687f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothes: []
+--- !u!4 &923330210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923330208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1057213403
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,9 +1252,10 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1426962473}
   m_Father: {fileID: 827498490}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1470,12 +1508,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 827498490}
-  m_RootOrder: 3
+  m_Father: {fileID: 1119469636}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65.7, y: -54.45999}
+  m_AnchoredPosition: {x: 65.69997, y: -18.496181}
   m_SizeDelta: {x: 131.4, y: 36.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1426962474
@@ -1530,7 +1568,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd11381718f4a4951846b91aeae80739, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moneyUiText: {fileID: 1426962474}
+  moneyAmountOnUiText: {fileID: 1426962474}
+  moneyManager: {fileID: 709785816}
 --- !u!1 &1615520991
 GameObject:
   m_ObjectHideFlags: 0
@@ -1544,7 +1583,7 @@ GameObject:
   - component: {fileID: 1615520993}
   - component: {fileID: 1615520995}
   m_Layer: 5
-  m_Name: Thirts amount
+  m_Name: Tshirts amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1561,12 +1600,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 827498490}
-  m_RootOrder: 1
+  m_Father: {fileID: 1939373108}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -65.7, y: -18.161987}
+  m_AnchoredPosition: {x: 65.69997, y: -18.498203}
   m_SizeDelta: {x: 131.4, y: 36.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1615520993
@@ -1621,7 +1660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22ad83aaa90274a1eaed958e64e91837, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemAmountUiText: {fileID: 1615520993}
+  tshirts: {fileID: 244218716}
+  amountOnUiText: {fileID: 1615520993}
 --- !u!1 &1906131616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1688,36 +1728,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1912992504
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1912992505}
-  m_Layer: 0
-  m_Name: MechanicsObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1912992505
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1912992504}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 237.86325, y: 110.4877, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1939373107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1746,7 +1756,8 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1615520992}
   m_Father: {fileID: 827498490}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
