@@ -70,6 +70,8 @@ public abstract class Clothes : MonoBehaviour
 	/// </summary>
 	public event Action<int> UpgradeBought;
 
+	public event Action<int> LevelIncreased;
+
 	[SerializeField]
 	protected Button sellButton;
 
@@ -92,7 +94,10 @@ public abstract class Clothes : MonoBehaviour
 
 	private int OwnedMoneyAmount => moneyManager.Amount;
 
-	private int MoneyNeededToUpgrade => Level * 20;
+	/// <summary>
+	/// Money needed to buy an upgrade
+	/// </summary>
+	public int MoneyNeededToUpgrade => (int)(Level * Level * Level + 0.1 * (Level + Level));
 
 	/// <summary>
 	/// 
@@ -102,6 +107,7 @@ public abstract class Clothes : MonoBehaviour
 		Debug.LogFormat("{0} on Awake.", this);
 
 		Level = 1;
+		LevelIncreased?.Invoke(Level);
 		moneyManager = FindObjectOfType<MoneyManager>();
 		CheckIfUpgradeCanBeBought();
 		moneyManager.AmountChanged += CheckIfUpgradeCanBeBought;
@@ -115,6 +121,11 @@ public abstract class Clothes : MonoBehaviour
 		makeItemButton.onClick.AddListener(MakeOneItem);
 		upgradeButton.onClick.AddListener(BuyUpgrade);
 		StartCoroutine(MakeItemAutomatically());
+	}
+
+	private void Update()
+	{
+		// CheckIfUpgradeCanBeBought();
 	}
 
 	private void OnDestroy()
@@ -148,17 +159,19 @@ public abstract class Clothes : MonoBehaviour
 
 	private void MakeOneItem()
 	{
-		Amount++;
+		Amount += Level;
 
 		// Debug.Log(this + " Made. Current amount: " + Amount);
-		Made?.Invoke(1);
+		Made?.Invoke(Level);
 		AmountChanged?.Invoke();
 	}
 
 	private void IncreaseLevel()
 	{
 		Level++;
+		LevelIncreased?.Invoke(Level);
 		Debug.LogFormat("Level increased. New level: {0}", Level);
+		CheckIfUpgradeCanBeBought();
 	}
 
 	private void BuyUpgrade()

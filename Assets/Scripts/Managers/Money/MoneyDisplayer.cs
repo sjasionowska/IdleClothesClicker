@@ -9,6 +9,7 @@ public class MoneyDisplayer : MonoBehaviour
 	[SerializeField]
 	private Text moneyAmountOnUiText;
 
+	[SerializeField]
 	private MoneyManager moneyManager;
 
 	private int Amount => moneyManager.Amount;
@@ -17,7 +18,6 @@ public class MoneyDisplayer : MonoBehaviour
 	{
 		Debug.LogFormat("{0} on Awake.", this);
 
-		moneyManager = FindObjectOfType<MoneyManager>();
 		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = Amount.ToString();
 		else Debug.LogError("moneyAmountOnUiText is null!");
 		moneyManager.AmountChanged += RefreshMoneyAmount;

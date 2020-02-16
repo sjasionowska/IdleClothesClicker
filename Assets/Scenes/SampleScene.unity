@@ -383,6 +383,7 @@ GameObject:
   - component: {fileID: 190517837}
   - component: {fileID: 190517839}
   - component: {fileID: 190517838}
+  - component: {fileID: 190517840}
   m_Layer: 5
   m_Name: UpperInfoPanel
   m_TagString: Untagged
@@ -447,6 +448,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190517836}
   m_CullTransparentMesh: 0
+--- !u!114 &190517840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 190517836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9614e2b9670b4a6d9147ebb84d71c485, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothes: {fileID: 244218716}
+  levelOnUiText: {fileID: 1962029853}
+  infoOnAutomaticProductionText: {fileID: 657547419}
+  infoOnPrice: {fileID: 299569717}
 --- !u!1 &244218712
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,6 +728,7 @@ GameObject:
   - component: {fileID: 645141901}
   - component: {fileID: 645141900}
   - component: {fileID: 645141899}
+  - component: {fileID: 645141902}
   m_Layer: 5
   m_Name: Upgrade button
   m_TagString: Untagged
@@ -814,6 +832,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 645141897}
   m_CullTransparentMesh: 0
+--- !u!114 &645141902
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645141897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8c07eed90bb426ca84e3daf99f54f9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clothes: {fileID: 244218716}
+  priceText: {fileID: 73929076}
 --- !u!1 &657547417
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,7 +863,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &657547418
 RectTransform:
   m_ObjectHideFlags: 0
@@ -882,7 +914,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1 t-shirt / 10 seconds
+  m_Text: 1 t-shirt / 5 seconds
 --- !u!222 &657547420
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1599,6 +1631,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyAmountOnUiText: {fileID: 1426962474}
+  moneyManager: {fileID: 709785816}
 --- !u!1 &1615520991
 GameObject:
   m_ObjectHideFlags: 0
