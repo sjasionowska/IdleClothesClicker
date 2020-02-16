@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -59,11 +60,35 @@ public abstract class Clothes : MonoBehaviour
 
 	private int amount;
 
-	protected int price;
+	private int price;
 
 	private int level;
 
-	private Store store;
+	private void Awake()
+	{
+		Debug.LogFormat("{0} on Awake.", this);
+	}
+
+	private void Start()
+	{
+		Debug.LogFormat("{0} on Start.", this);
+		
+		sellButton.onClick.AddListener(SellAll);
+		makeItemButton.onClick.AddListener(MakeOneItem);
+		StartCoroutine(MakeItemAutomatically());
+	}
+
+	private IEnumerator MakeItemAutomatically()
+	{
+		while (true)
+		{
+			yield return new WaitForSeconds(5);
+
+			Amount += Level;
+			AmountChanged?.Invoke();
+			Debug.LogFormat("{0} : Item made automatically. New Amount: {1}", this, Amount);
+		}
+	}
 
 	private void SellAll()
 	{
@@ -80,18 +105,4 @@ public abstract class Clothes : MonoBehaviour
 		Made?.Invoke(1);
 		AmountChanged?.Invoke();
 	}
-
-	private void Awake()
-	{		Debug.LogFormat("{0} on Awake.", this);
-
-		store = FindObjectOfType<Store>();
-	}
-
-	private void Start()
-	{
-		sellButton.onClick.AddListener(SellAll);
-		makeItemButton.onClick.AddListener(MakeOneItem);
-	}
-
-	private void OnDestroy() { }
 }

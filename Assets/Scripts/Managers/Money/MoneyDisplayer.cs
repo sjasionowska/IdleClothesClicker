@@ -8,19 +8,19 @@ public class MoneyDisplayer : MonoBehaviour
 {
 	[SerializeField]
 	private Text moneyAmountOnUiText;
-	
+
 	private MoneyManager moneyManager;
 
 	private int amount => moneyManager.Amount;
 
 	private void Awake()
-	{		Debug.LogFormat("{0} on Awake.", this);
+	{
+		Debug.LogFormat("{0} on Awake.", this);
 
 		moneyManager = FindObjectOfType<MoneyManager>();
-		if(moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
+		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
 		else Debug.LogError("moneyAmountOnUiText is null!");
 		moneyManager.AmountChanged += RefreshMoneyAmount;
-
 	}
 
 	private void OnDestroy()
@@ -28,9 +28,9 @@ public class MoneyDisplayer : MonoBehaviour
 		moneyManager.AmountChanged -= RefreshMoneyAmount;
 	}
 
-	public void RefreshMoneyAmount()
+	private void RefreshMoneyAmount()
 	{
-		if(moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
-		else Debug.LogError("moneyAmountOnUiText is null!");		
+		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
+		else Debug.LogError("moneyAmountOnUiText is null!");
 	}
 }
