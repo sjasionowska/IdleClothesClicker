@@ -82,7 +82,8 @@ public abstract class Clothes : MonoBehaviour
 	}
 
 	private void Awake()
-	{
+	{		Debug.LogFormat("{0} on Awake.", this);
+
 		store = FindObjectOfType<Store>();
 	}
 

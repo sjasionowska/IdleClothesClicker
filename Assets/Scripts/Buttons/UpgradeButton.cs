@@ -12,6 +12,7 @@ public class UpgradeButton : Button
 	
 	private void Awake()
 	{
+		Debug.LogFormat("{0} on Awake.", this);
 		moneyManager = FindObjectOfType<MoneyManager>();
 		CheckIfCanBeBought();
 		moneyManager.AmountChanged += CheckIfCanBeBought;

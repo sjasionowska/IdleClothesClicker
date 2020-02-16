@@ -27,7 +27,8 @@ public class MoneyManager : MonoBehaviour
 	}
 
 	private void Awake()
-	{
+	{		Debug.LogFormat("{0} on Awake.", this);
+
 		Amount = 0;
 		store = FindObjectOfType<Store>();
 		store.MoneyEarned += EarnMoney;

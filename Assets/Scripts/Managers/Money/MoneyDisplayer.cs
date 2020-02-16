@@ -14,7 +14,8 @@ public class MoneyDisplayer : MonoBehaviour
 	private int amount => moneyManager.Amount;
 
 	private void Awake()
-	{
+	{		Debug.LogFormat("{0} on Awake.", this);
+
 		moneyManager = FindObjectOfType<MoneyManager>();
 		if(moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
 		else Debug.LogError("moneyAmountOnUiText is null!");

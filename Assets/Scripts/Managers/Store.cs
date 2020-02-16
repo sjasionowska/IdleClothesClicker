@@ -21,7 +21,8 @@ public class Store : MonoBehaviour
 	private Action<int, int> myDelegate = delegate(int amount, int price) { instance.EarnMoney(amount, price); };
 
 	private void Awake()
-	{
+	{		
+		Debug.LogFormat("{0} on Awake.", this);
 		instance = this;
 		foreach (var item in clothes)
 		{
