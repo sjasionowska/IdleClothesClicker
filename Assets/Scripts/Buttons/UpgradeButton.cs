@@ -1,18 +1,30 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class UpgradeButton : MonoBehaviour
+public class UpgradeButton : Button
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+	private MoneyManager moneyManager;
+	private int OwnedMoneyAmount => moneyManager.Amount;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+	private int moneyNeededToUpgrade = 40;
+	
+	private void Awake()
+	{
+		moneyManager = FindObjectOfType<MoneyManager>();
+		CheckIfCanBeBought();
+		moneyManager.AmountChanged += CheckIfCanBeBought;
+	}
+
+	private void OnDestroy()
+	{
+		moneyManager.AmountChanged -= CheckIfCanBeBought;
+	}
+
+	private void CheckIfCanBeBought()
+	{
+		if (OwnedMoneyAmount >= moneyNeededToUpgrade) interactable = true;
+		else interactable = false;
+	}
 }

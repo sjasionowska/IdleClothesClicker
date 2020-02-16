@@ -12,7 +12,7 @@ public abstract class Clothes : MonoBehaviour
 	public int Level
 	{
 		get => level;
-		private set => level = value;
+		protected set => level = value;
 	}
 
 	/// <summary>
@@ -34,7 +34,6 @@ public abstract class Clothes : MonoBehaviour
 			price = level;
 			return price;
 		}
-		private set => price = value;
 	}
 
 	public void Upgrade()
@@ -60,7 +59,7 @@ public abstract class Clothes : MonoBehaviour
 
 	private int amount;
 
-	private int price;
+	protected int price;
 
 	private int level;
 

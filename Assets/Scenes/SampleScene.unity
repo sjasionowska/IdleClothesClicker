@@ -1132,7 +1132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5800d9ee4ed094d35a7c29349a6687f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  clothes: []
+  clothes:
+  - {fileID: 244218716}
 --- !u!4 &923330210
 Transform:
   m_ObjectHideFlags: 0

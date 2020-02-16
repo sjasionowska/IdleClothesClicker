@@ -9,7 +9,6 @@ public class MoneyDisplayer : MonoBehaviour
 	[SerializeField]
 	private Text moneyAmountOnUiText;
 	
-	[SerializeField]
 	private MoneyManager moneyManager;
 
 	private int amount => moneyManager.Amount;
@@ -19,11 +18,16 @@ public class MoneyDisplayer : MonoBehaviour
 		moneyManager = FindObjectOfType<MoneyManager>();
 		if(moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
 		else Debug.LogError("moneyAmountOnUiText is null!");
+		moneyManager.AmountChanged += RefreshMoneyAmount;
 
-		
 	}
 
-	public void AddMoney(int moneyToAdd)
+	private void OnDestroy()
+	{
+		moneyManager.AmountChanged -= RefreshMoneyAmount;
+	}
+
+	public void RefreshMoneyAmount()
 	{
 		if(moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
 		else Debug.LogError("moneyAmountOnUiText is null!");		

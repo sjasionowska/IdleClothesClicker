@@ -1,7 +1,11 @@
+using System;
+
 using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
+	public event Action AmountChanged;
+	
 	private Store store;
 
 	private int amount;
@@ -38,5 +42,6 @@ public class MoneyManager : MonoBehaviour
 	{
 		Amount += moneyEarned;
 		Debug.LogFormat("Money amount owned: {0}", Amount);
+		AmountChanged?.Invoke();
 	}
 }

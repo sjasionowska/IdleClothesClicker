@@ -1,1 +1,7 @@
-public class Tshirts : Clothes { }
+public class Tshirts : Clothes
+{
+	private void Awake()
+	{
+		Level = 1;
+	}
+}
