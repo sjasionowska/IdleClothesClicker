@@ -11,14 +11,14 @@ public class MoneyDisplayer : MonoBehaviour
 
 	private MoneyManager moneyManager;
 
-	private int amount => moneyManager.Amount;
+	private int Amount => moneyManager.Amount;
 
 	private void Awake()
 	{
 		Debug.LogFormat("{0} on Awake.", this);
 
 		moneyManager = FindObjectOfType<MoneyManager>();
-		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
+		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = Amount.ToString();
 		else Debug.LogError("moneyAmountOnUiText is null!");
 		moneyManager.AmountChanged += RefreshMoneyAmount;
 	}
@@ -30,7 +30,7 @@ public class MoneyDisplayer : MonoBehaviour
 
 	private void RefreshMoneyAmount()
 	{
-		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = amount.ToString();
+		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = Amount.ToString();
 		else Debug.LogError("moneyAmountOnUiText is null!");
 	}
 }

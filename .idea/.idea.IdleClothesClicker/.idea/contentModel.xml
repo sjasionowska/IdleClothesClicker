@@ -10,9 +10,6 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
-          <e p="Buttons" t="Include">
-            <e p="UpgradeButton.cs" t="Include" />
-          </e>
           <e p="Clothes" t="Include">
             <e p="Clothes.cs" t="Include" />
             <e p="Tshirts.cs" t="Include" />

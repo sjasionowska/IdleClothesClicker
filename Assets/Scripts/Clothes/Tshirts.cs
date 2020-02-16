@@ -2,8 +2,9 @@ using UnityEngine;
 
 public class Tshirts : Clothes
 {
-	private void Awake()
+	protected override void Awake()
 	{
+		base.Awake();
 		Debug.LogFormat("{0} on Awake.", this);
 
 		Level = 1;

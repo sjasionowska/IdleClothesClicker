@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoneyManager : MonoBehaviour
 {
 	public event Action AmountChanged;
-	
+
 	private Store store;
 
 	private int amount;
@@ -27,21 +27,32 @@ public class MoneyManager : MonoBehaviour
 	}
 
 	private void Awake()
-	{		Debug.LogFormat("{0} on Awake.", this);
+	{
+		Debug.LogFormat("{0} on Awake.", this);
 
 		Amount = 0;
 		store = FindObjectOfType<Store>();
 		store.MoneyEarned += EarnMoney;
+		store.MoneySpent += SpendMoney;
+		
 	}
 
 	private void OnDestroy()
 	{
 		store.MoneyEarned -= EarnMoney;
+		store.MoneySpent -= SpendMoney;
 	}
 
 	private void EarnMoney(int moneyEarned)
 	{
 		Amount += moneyEarned;
+		Debug.LogFormat("Money amount owned: {0}", Amount);
+		AmountChanged?.Invoke();
+	}
+
+	private void SpendMoney(int moneySpent)
+	{
+		Amount -= moneySpent;
 		Debug.LogFormat("Money amount owned: {0}", Amount);
 		AmountChanged?.Invoke();
 	}

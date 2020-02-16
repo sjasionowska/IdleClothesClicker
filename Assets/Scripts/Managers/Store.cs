@@ -11,6 +11,11 @@ public class Store : MonoBehaviour
 	public event Action<int> MoneyEarned;
 
 	/// <summary>
+	/// Action invoked when something was bought and money is spent.
+	/// </summary>
+	public event Action<int> MoneySpent;
+
+	/// <summary>
 	/// instance created so we can call non-static method in a delegate
 	/// </summary>
 	private static Store instance;
@@ -27,8 +32,16 @@ public class Store : MonoBehaviour
 		instance = this;
 		foreach (var item in clothes)
 		{
-			item.Made += ItemOnMade;
 			item.SoldAll += myDelegate;
+			item.UpgradeBought += ItemOnUpgradeBought;
+		}
+	}
+
+	private void OnDestroy()
+	{
+		foreach (var item in clothes)
+		{
+			item.SoldAll -= myDelegate;
 		}
 	}
 
@@ -38,14 +51,14 @@ public class Store : MonoBehaviour
 		MoneyEarned?.Invoke(moneyEarned);
 	}
 
-	private void OnDestroy()
+	private void SpendMoney(int moneySpent)
 	{
-		foreach (var item in clothes)
-		{
-			item.Made -= ItemOnMade;
-			item.SoldAll -= myDelegate;
-		}
+		MoneySpent?.Invoke(moneySpent);
+		Debug.Log("MoneySpent " + moneySpent);
 	}
 
-	private void ItemOnMade(int obj) { }
+	private void ItemOnUpgradeBought(int moneySpent)
+	{
+		SpendMoney(moneySpent);
+	}
 }
