@@ -14,6 +14,11 @@ public class UpgradeDisplayer : MonoBehaviour
 		clothes.LevelIncreased += RefreshPrice;
 	}
 
+	private void Start()
+	{
+		RefreshPrice(0);
+	}
+
 	private void OnDestroy()
 	{
 		clothes.LevelIncreased -= RefreshPrice;

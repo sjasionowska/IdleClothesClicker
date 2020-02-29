@@ -2,9 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9ba9e4c4-1100-4e67-bc2b-2e85026df5d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Molly Jack_Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Molly Jack_Regular.otf.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/red_button08.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/red_button08.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/t-shirt-1135367_1280.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/t-shirt-1135367_1280.png.meta" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,59 +34,60 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="345">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
               <folding>
-                <marker date="1581874286800" expanded="true" signature="6:40" ph="..." />
-                <marker date="1581874286800" expanded="true" signature="87:425" ph="{...}" />
-                <marker date="1581874286800" expanded="true" signature="200:248" ph="{...}" />
-                <marker date="1581874286800" expanded="true" signature="275:323" ph="{...}" />
-                <marker date="1581874286800" expanded="true" signature="362:423" ph="{...}" />
+                <marker date="1581936017307" expanded="false" signature="6:40" ph="..." />
+                <marker date="1581936017307" expanded="true" signature="87:473" ph="{...}" />
+                <marker date="1581936017307" expanded="true" signature="200:248" ph="{...}" />
+                <marker date="1581936017307" expanded="true" signature="271:296" ph="{...}" />
+                <marker date="1581936017307" expanded="true" signature="323:371" ph="{...}" />
+                <marker date="1581936017307" expanded="true" signature="410:471" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-388">
-              <caret line="173" column="36" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
+            <state relative-caret-position="1150">
+              <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
               <folding>
-                <marker date="1581875140831" expanded="false" signature="6:81" ph="..." />
-                <marker date="1581875140831" expanded="true" signature="128:4045" ph="{...}" />
-                <marker date="1581875140831" expanded="false" signature="131:838" ph="Public Properties" />
-                <marker date="1581875140831" expanded="true" signature="158:271" ph="/// Level of Clothes. The higher it is, the more units are made in the background. ... " />
-                <marker date="1581875140831" expanded="true" signature="289:501" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="324:498" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="504:570" ph="/// Amount of Clothes made / owned. ... " />
-                <marker date="1581875140831" expanded="true" signature="589:645" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="648:713" ph="/// Price for one item of Clothes. ... " />
-                <marker date="1581875140831" expanded="true" signature="731:786" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="740:783" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="810:827" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="841:938" ph="/// Sold Action with parameters for Amount and Price of sold items ... " />
-                <marker date="1581875140831" expanded="true" signature="981:1051" ph="///  ... " />
-                <marker date="1581875140831" expanded="true" signature="1086:1159" ph="/// Action invoked when items was made ... " />
-                <marker date="1581875140831" expanded="true" signature="1198:1280" ph="/// Action invoked when items was made ... " />
-                <marker date="1581875140831" expanded="true" signature="1469:1538" ph="///  ... " />
-                <marker date="1581875140831" expanded="true" signature="1748:1813" ph="///  ... " />
-                <marker date="1581875140831" expanded="true" signature="1874:1909" ph="///  ... " />
-                <marker date="1581875140831" expanded="true" signature="1941:2177" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="2200:2435" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="2459:2499" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="2526:2645" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="2535:2603" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="2691:2892" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="2709:2889" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="2917:3027" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="3056:3191" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="3222:3364" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="3392:3697" ph="{...}" />
-                <marker date="1581875140831" expanded="true" signature="3740:4043" ph="{...}" />
+                <marker date="1581875323052" expanded="false" signature="6:81" ph="..." />
+                <marker date="1581875323052" expanded="true" signature="128:3749" ph="{...}" />
+                <marker date="1581875323052" expanded="false" signature="131:838" ph="Public Properties" />
+                <marker date="1581875323052" expanded="true" signature="158:271" ph="/// Level of Clothes. The higher it is, the more units are made in the background. ... " />
+                <marker date="1581875323052" expanded="true" signature="289:501" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="324:498" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="504:570" ph="/// Amount of Clothes made / owned. ... " />
+                <marker date="1581875323052" expanded="true" signature="589:645" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="648:713" ph="/// Price for one item of Clothes. ... " />
+                <marker date="1581875323052" expanded="true" signature="731:786" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="740:783" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="810:827" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="841:938" ph="/// Sold Action with parameters for Amount and Price of sold items ... " />
+                <marker date="1581875323052" expanded="true" signature="981:1051" ph="/// Action invoked when items were made ... " />
+                <marker date="1581875323052" expanded="true" signature="1086:1159" ph="/// Action invoked Amount of items changed ... " />
+                <marker date="1581875323052" expanded="true" signature="1198:1280" ph="/// Action invoked when Level of items was upgraded ... " />
+                <marker date="1581875323052" expanded="true" signature="1469:1538" ph="/// Button for upgrading Level of Item ... " />
+                <marker date="1581875323052" expanded="true" signature="1748:1813" ph="/// Money needed to buy an upgrade ... " />
+                <marker date="1581875323052" expanded="true" signature="1906:1941" ph="///  ... " />
+                <marker date="1581875323052" expanded="true" signature="1973:2209" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="2232:2467" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="2491:2531" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="2558:2677" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="2567:2635" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="2723:2924" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="2741:2921" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="2949:3059" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="3088:3223" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="3254:3396" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="3424:3572" ph="{...}" />
+                <marker date="1581875323052" expanded="true" signature="3615:3747" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -89,13 +96,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-121">
+            <state relative-caret-position="1058">
               <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
               <folding>
                 <marker date="1581872542655" expanded="false" signature="6:67" ph="..." />
                 <marker date="1581872542655" expanded="true" signature="103:1345" ph="{...}" />
                 <marker date="1581872542655" expanded="true" signature="107:228" ph="/// Action invoked when some money is earned with parameter sending amount of earned money ... " />
-                <marker date="1581872542655" expanded="true" signature="270:365" ph="///  ... " />
+                <marker date="1581872542655" expanded="true" signature="270:365" ph="/// Action invoked when something was bought and money is spent. ... " />
                 <marker date="1581872542655" expanded="true" signature="406:504" ph="/// instance created so we can call non-static method in a delegate ... " />
                 <marker date="1581872542655" expanded="true" signature="722:907" ph="{...}" />
                 <marker date="1581872542655" expanded="true" signature="819:904" ph="{...}" />
@@ -127,7 +134,6 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F404566-610E-4C41-BFFA-144D0CF535AC/67/e628b617/UnityEvent.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/e8/51a6dcee/Image.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/94/3f3d5efa/BaseInputModule.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/de/829fe904/Text.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
@@ -138,7 +144,6 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5F404566-610E-4C41-BFFA-144D0CF535AC/42/fa771c49/CachedInvokableCall`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -174,8 +179,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/Level Displayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" />
       </list>
     </option>
   </component>
@@ -191,10 +196,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -232,7 +235,9 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -288,12 +293,13 @@
       <workItem from="1581313936272" duration="33000" />
       <workItem from="1581616642398" duration="5824000" />
       <workItem from="1581850406673" duration="69000" />
-      <workItem from="1581850484521" duration="7646000" />
+      <workItem from="1581850484521" duration="8355000" />
+      <workItem from="1581935981651" duration="450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29923000" />
+    <option name="totallyTimeSpent" value="31082000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -308,7 +314,7 @@
     <frame x="56" y="23" width="1384" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27868852" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28241432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -316,7 +322,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32884097" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39892185" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -353,23 +359,23 @@
           <line>177</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" initialLine="164">
             <startOffsets>
-              <option value="3394" />
+              <option value="3426" />
             </startOffsets>
             <endOffsets>
-              <option value="3395" />
+              <option value="3427" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs</url>
-          <line>188</line>
+          <line>185</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" initialLine="171">
             <startOffsets>
-              <option value="3742" />
+              <option value="3617" />
             </startOffsets>
             <endOffsets>
-              <option value="3743" />
+              <option value="3618" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="25" />
@@ -392,10 +398,10 @@
           <line>169</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" initialLine="169">
             <startOffsets>
-              <option value="3224" />
+              <option value="3256" />
             </startOffsets>
             <endOffsets>
-              <option value="3225" />
+              <option value="3257" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="27" />
@@ -588,13 +594,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Buttons/UpgradeButton.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Buttons/UpgradeButton.cs" />
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/D32DA0EA-B8F9-4AB1-B646-8A3981679971/e8/51a6dcee/Image.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-744">
@@ -897,20 +897,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="16" column="28" lean-forward="true" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-          <folding>
-            <marker date="1581874286800" expanded="true" signature="6:40" ph="..." />
-            <marker date="1581874286800" expanded="true" signature="87:425" ph="{...}" />
-            <marker date="1581874286800" expanded="true" signature="200:248" ph="{...}" />
-            <marker date="1581874286800" expanded="true" signature="275:323" ph="{...}" />
-            <marker date="1581874286800" expanded="true" signature="362:423" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -922,15 +908,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+          <folding>
+            <marker date="1581936017307" expanded="false" signature="6:40" ph="..." />
+            <marker date="1581936017307" expanded="true" signature="87:473" ph="{...}" />
+            <marker date="1581936017307" expanded="true" signature="200:248" ph="{...}" />
+            <marker date="1581936017307" expanded="true" signature="271:296" ph="{...}" />
+            <marker date="1581936017307" expanded="true" signature="323:371" ph="{...}" />
+            <marker date="1581936017307" expanded="true" signature="410:471" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1150">
+          <caret line="99" column="66" selection-start-line="99" selection-start-column="66" selection-end-line="99" selection-end-column="66" />
+          <folding>
+            <marker date="1581875323052" expanded="false" signature="6:81" ph="..." />
+            <marker date="1581875323052" expanded="true" signature="128:3749" ph="{...}" />
+            <marker date="1581875323052" expanded="false" signature="131:838" ph="Public Properties" />
+            <marker date="1581875323052" expanded="true" signature="158:271" ph="/// Level of Clothes. The higher it is, the more units are made in the background. ... " />
+            <marker date="1581875323052" expanded="true" signature="289:501" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="324:498" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="504:570" ph="/// Amount of Clothes made / owned. ... " />
+            <marker date="1581875323052" expanded="true" signature="589:645" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="648:713" ph="/// Price for one item of Clothes. ... " />
+            <marker date="1581875323052" expanded="true" signature="731:786" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="740:783" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="810:827" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="841:938" ph="/// Sold Action with parameters for Amount and Price of sold items ... " />
+            <marker date="1581875323052" expanded="true" signature="981:1051" ph="/// Action invoked when items were made ... " />
+            <marker date="1581875323052" expanded="true" signature="1086:1159" ph="/// Action invoked Amount of items changed ... " />
+            <marker date="1581875323052" expanded="true" signature="1198:1280" ph="/// Action invoked when Level of items was upgraded ... " />
+            <marker date="1581875323052" expanded="true" signature="1469:1538" ph="/// Button for upgrading Level of Item ... " />
+            <marker date="1581875323052" expanded="true" signature="1748:1813" ph="/// Money needed to buy an upgrade ... " />
+            <marker date="1581875323052" expanded="true" signature="1906:1941" ph="///  ... " />
+            <marker date="1581875323052" expanded="true" signature="1973:2209" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="2232:2467" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="2491:2531" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="2558:2677" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="2567:2635" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="2723:2924" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="2741:2921" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="2949:3059" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="3088:3223" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="3254:3396" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="3424:3572" ph="{...}" />
+            <marker date="1581875323052" expanded="true" signature="3615:3747" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-121">
+        <state relative-caret-position="1058">
           <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
           <folding>
             <marker date="1581872542655" expanded="false" signature="6:67" ph="..." />
             <marker date="1581872542655" expanded="true" signature="103:1345" ph="{...}" />
             <marker date="1581872542655" expanded="true" signature="107:228" ph="/// Action invoked when some money is earned with parameter sending amount of earned money ... " />
-            <marker date="1581872542655" expanded="true" signature="270:365" ph="///  ... " />
+            <marker date="1581872542655" expanded="true" signature="270:365" ph="/// Action invoked when something was bought and money is spent. ... " />
             <marker date="1581872542655" expanded="true" signature="406:504" ph="/// instance created so we can call non-static method in a delegate ... " />
             <marker date="1581872542655" expanded="true" signature="722:907" ph="{...}" />
             <marker date="1581872542655" expanded="true" signature="819:904" ph="{...}" />
@@ -939,46 +980,6 @@
             <marker date="1581872542655" expanded="true" signature="1059:1137" ph="{...}" />
             <marker date="1581872542655" expanded="true" signature="1179:1260" ph="{...}" />
             <marker date="1581872542655" expanded="true" signature="1311:1343" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-388">
-          <caret line="173" column="36" selection-start-line="173" selection-start-column="36" selection-end-line="173" selection-end-column="36" />
-          <folding>
-            <marker date="1581875140831" expanded="false" signature="6:81" ph="..." />
-            <marker date="1581875140831" expanded="true" signature="128:4045" ph="{...}" />
-            <marker date="1581875140831" expanded="false" signature="131:838" ph="Public Properties" />
-            <marker date="1581875140831" expanded="true" signature="158:271" ph="/// Level of Clothes. The higher it is, the more units are made in the background. ... " />
-            <marker date="1581875140831" expanded="true" signature="289:501" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="324:498" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="504:570" ph="/// Amount of Clothes made / owned. ... " />
-            <marker date="1581875140831" expanded="true" signature="589:645" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="648:713" ph="/// Price for one item of Clothes. ... " />
-            <marker date="1581875140831" expanded="true" signature="731:786" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="740:783" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="810:827" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="841:938" ph="/// Sold Action with parameters for Amount and Price of sold items ... " />
-            <marker date="1581875140831" expanded="true" signature="981:1051" ph="///  ... " />
-            <marker date="1581875140831" expanded="true" signature="1086:1159" ph="/// Action invoked when items was made ... " />
-            <marker date="1581875140831" expanded="true" signature="1198:1280" ph="/// Action invoked when items was made ... " />
-            <marker date="1581875140831" expanded="true" signature="1469:1538" ph="///  ... " />
-            <marker date="1581875140831" expanded="true" signature="1748:1813" ph="///  ... " />
-            <marker date="1581875140831" expanded="true" signature="1874:1909" ph="///  ... " />
-            <marker date="1581875140831" expanded="true" signature="1941:2177" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="2200:2435" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="2459:2499" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="2526:2645" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="2535:2603" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="2691:2892" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="2709:2889" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="2917:3027" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="3056:3191" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="3222:3364" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="3392:3697" ph="{...}" />
-            <marker date="1581875140831" expanded="true" signature="3740:4043" ph="{...}" />
           </folding>
         </state>
       </provider>
