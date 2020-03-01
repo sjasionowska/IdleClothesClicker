@@ -3,17 +3,29 @@ using UnityEngine.UI;
 
 public class UpperInfoDisplayer : MonoBehaviour
 {
+	/// <summary>
+	/// Info on which Clothes info should this displayer display
+	/// </summary>
 	[SerializeField]
-	private Clothes clothes;
+	protected Clothes clothes;
 
+	/// <summary>
+	/// Text with info about level
+	/// </summary>
 	[SerializeField]
-	private Text levelOnUiText;
+	protected Text levelOnUiText;
 
+	/// <summary>
+	/// Text with info about automatic production at this moment
+	/// </summary>
 	[SerializeField]
-	private Text infoOnAutomaticProductionText;
+	protected Text infoOnAutomaticProductionText;
 
+	/// <summary>
+	/// Text with info about price for one item of Clothes
+	/// </summary>
 	[SerializeField]
-	private Text infoOnPrice;
+	protected Text infoOnPrice;
 
 	private void Awake()
 	{
@@ -25,10 +37,18 @@ public class UpperInfoDisplayer : MonoBehaviour
 		clothes.LevelIncreased -= RefreshDisplayer;
 	}
 
-	private void RefreshDisplayer(int level)
+	/// <summary>
+	/// Refreshes info about given Clothes. Virtual so names of Clothes can be overriden,
+	/// especially for plural and singular forms.
+	/// </summary>
+	/// <param name="level"></param>
+	protected virtual void RefreshDisplayer(int level)
 	{
-		levelOnUiText.text = string.Format("Level {0}", level.ToString());
-		infoOnAutomaticProductionText.text = string.Format("{0} {1} / 5 seconds", level.ToString(), clothes.name);
-		infoOnPrice.text = string.Format("{0}$ for 1 {1}", level.ToString(), clothes.name);
+		levelOnUiText.text = string.Format("Level {0}", NumberUtility.FormatNumber(level, 3));
+		infoOnAutomaticProductionText.text = string.Format(
+			"{0} {1} / 5 seconds",
+			NumberUtility.FormatNumber(level, 3),
+			clothes.name);
+		infoOnPrice.text = string.Format("{0} $ for 1 {1}", NumberUtility.FormatNumber(level, 3), clothes.name);
 	}
 }

@@ -26,6 +26,7 @@ public class UpgradeDisplayer : MonoBehaviour
 
 	private void RefreshPrice(int level)
 	{
-		priceText.text = clothes.MoneyNeededToUpgrade + "$";
+		priceText.text = NumberUtility.FormatNumber(clothes.MoneyNeededToUpgrade,3) + " $";
+		// priceText.text = clothes.MoneyNeededToUpgrade + "$";
 	}
 }

@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class MoneyManager : MonoBehaviour
 {
+	/// <summary>
+	/// Invoked when Amount of money changes
+	/// </summary>
 	public event Action AmountChanged;
 
 	private Store store;
@@ -34,7 +37,6 @@ public class MoneyManager : MonoBehaviour
 		store = FindObjectOfType<Store>();
 		store.MoneyEarned += EarnMoney;
 		store.MoneySpent += SpendMoney;
-		
 	}
 
 	private void OnDestroy()

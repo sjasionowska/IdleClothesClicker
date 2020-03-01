@@ -17,9 +17,9 @@ public class MoneyDisplayer : MonoBehaviour
 	private void Awake()
 	{
 		Debug.LogFormat("{0} on Awake.", this);
-
-		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = Amount.ToString();
-		else Debug.LogError("moneyAmountOnUiText is null!");
+		RefreshMoneyAmount();
+		// if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = Amount.ToString();
+		// else Debug.LogError("moneyAmountOnUiText is null!");
 		moneyManager.AmountChanged += RefreshMoneyAmount;
 	}
 
@@ -30,7 +30,7 @@ public class MoneyDisplayer : MonoBehaviour
 
 	private void RefreshMoneyAmount()
 	{
-		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = Amount.ToString();
+		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = NumberUtility.FormatNumber(Amount, 3) + " $";
 		else Debug.LogError("moneyAmountOnUiText is null!");
 	}
 }

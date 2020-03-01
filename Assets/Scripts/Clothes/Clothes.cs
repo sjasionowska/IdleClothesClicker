@@ -66,10 +66,13 @@ public abstract class Clothes : MonoBehaviour
 	public event Action AmountChanged;
 
 	/// <summary>
-	/// Action invoked when Level of items was upgraded
+	/// Action invoked when Upgrade was bought
 	/// </summary>
 	public event Action<int> UpgradeBought;
 
+	/// <summary>
+	/// Action invoked when Level of items was upgraded
+	/// </summary>
 	public event Action<int> LevelIncreased;
 
 	[SerializeField]
@@ -83,6 +86,31 @@ public abstract class Clothes : MonoBehaviour
 	/// </summary>
 	[SerializeField]
 	protected Button upgradeButton;
+	
+	/// <summary>
+	/// First button for accelerating production 
+	/// </summary>
+	[SerializeField]
+	protected Button accelerateButton1;
+
+	/// <summary>
+	/// Second button for accelerating production 
+	/// </summary>
+	[SerializeField]
+	protected Button accelerateButton2;
+
+	/// <summary>
+	/// Third button for accelerating production 
+	/// </summary>
+	[SerializeField]
+	protected Button accelerateButton3;
+	
+	/// <summary>
+	/// Fourth button for accelerating production 
+	/// </summary>
+	[SerializeField]
+	protected Button accelerateButton4;
+	
 
 	private MoneyManager moneyManager;
 
@@ -186,5 +214,10 @@ public abstract class Clothes : MonoBehaviour
 	{
 		if (OwnedMoneyAmount >= MoneyNeededToUpgrade) upgradeButton.interactable = true;
 		else upgradeButton.interactable = false;
+	}
+
+	private void AccelerateProduction()
+	{
+		
 	}
 }
