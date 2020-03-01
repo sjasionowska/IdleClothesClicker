@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ba9e4c4-1100-4e67-bc2b-2e85026df5d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" afterDir="false" />
-    </list>
+    <list default="true" id="9ba9e4c4-1100-4e67-bc2b-2e85026df5d9" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,163 +23,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-              <folding>
-                <marker date="1583060125849" expanded="false" signature="6:40" ph="..." />
-                <marker date="1583060125849" expanded="true" signature="87:562" ph="{...}" />
-                <marker date="1583060125849" expanded="true" signature="200:248" ph="{...}" />
-                <marker date="1583060125849" expanded="true" signature="271:296" ph="{...}" />
-                <marker date="1583060125849" expanded="true" signature="323:371" ph="{...}" />
-                <marker date="1583060125849" expanded="true" signature="410:560" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-653">
-              <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-              <folding>
-                <marker date="1583061682437" expanded="false" signature="6:40" ph="..." />
-                <marker date="1583061682437" expanded="true" signature="89:1386" ph="{...}" />
-                <marker date="1583061682437" expanded="true" signature="93:184" ph="///  ... " />
-                <marker date="1583061682437" expanded="true" signature="233:294" ph="/// Text with info about automatic production at this moment ... " />
-                <marker date="1583061682437" expanded="true" signature="346:437" ph="///  ... " />
-                <marker date="1583061682437" expanded="true" signature="505:590" ph="/// Text with info about automatic production at this moment ... " />
-                <marker date="1583061682437" expanded="true" signature="660:712" ph="{...}" />
-                <marker date="1583061682437" expanded="true" signature="739:791" ph="{...}" />
-                <marker date="1583061682437" expanded="true" signature="794:991" ph="/// Refreshes info about given Clothes. Virtual so names of Clothes can be overriden, ... " />
-                <marker date="1583061682437" expanded="true" signature="1043:1384" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsUpperInfoDisplayer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-              <folding>
-                <marker date="1583061778086" expanded="true" signature="0:59" ph="///  ... " />
-                <marker date="1583061778086" expanded="true" signature="119:561" ph="{...}" />
-                <marker date="1583061778086" expanded="true" signature="194:559" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="32" column="88" selection-start-line="32" selection-start-column="88" selection-end-line="32" selection-end-column="88" />
-              <folding>
-                <marker date="1583060148342" expanded="false" signature="6:101" ph="..." />
-                <marker date="1583060148342" expanded="true" signature="146:882" ph="{...}" />
-                <marker date="1583060148342" expanded="true" signature="324:590" ph="{...}" />
-                <marker date="1583060148342" expanded="true" signature="396:535" ph="/* if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = Amount.ToString(); ... */" />
-                <marker date="1583060148342" expanded="true" signature="617:675" ph="{...}" />
-                <marker date="1583060148342" expanded="true" signature="711:880" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="170" column="9" lean-forward="true" selection-start-line="170" selection-start-column="9" selection-end-line="170" selection-end-column="9" />
-              <folding>
-                <marker date="1583061191277" expanded="false" signature="6:81" ph="..." />
-                <marker date="1583061191277" expanded="true" signature="128:4413" ph="{...}" />
-                <marker date="1583061191277" expanded="false" signature="131:838" ph="Public Properties" />
-                <marker date="1583061191277" expanded="true" signature="158:271" ph="/// Level of Clothes. The higher it is, the more units are made in the background. ... " />
-                <marker date="1583061191277" expanded="true" signature="289:501" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="324:498" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="504:570" ph="/// Amount of Clothes made / owned. ... " />
-                <marker date="1583061191277" expanded="true" signature="589:645" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="648:713" ph="/// Price for one item of Clothes. ... " />
-                <marker date="1583061191277" expanded="true" signature="731:786" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="740:783" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="810:827" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="841:938" ph="/// Sold Action with parameters for Amount and Price of sold items ... " />
-                <marker date="1583061191277" expanded="true" signature="981:1051" ph="/// Action invoked when items were made ... " />
-                <marker date="1583061191277" expanded="true" signature="1086:1159" ph="/// Action invoked Amount of items changed ... " />
-                <marker date="1583061191277" expanded="true" signature="1198:1271" ph="/// Action invoked when Upgrade was bought ... " />
-                <marker date="1583061191277" expanded="true" signature="1315:1397" ph="/// Action invoked when Level of items was upgraded ... " />
-                <marker date="1583061191277" expanded="true" signature="1544:1613" ph="/// Button for upgrading Level of Item ... " />
-                <marker date="1583061191277" expanded="true" signature="1668:1744" ph="/// First button for accelerating production  ... " />
-                <marker date="1583061191277" expanded="true" signature="1802:1879" ph="/// Second button for accelerating production  ... " />
-                <marker date="1583061191277" expanded="true" signature="1937:2013" ph="/// Third button for accelerating production  ... " />
-                <marker date="1583061191277" expanded="true" signature="2072:2149" ph="/// Fourth button for accelerating production  ... " />
-                <marker date="1583061191277" expanded="true" signature="2365:2430" ph="/// Money needed to buy an upgrade ... " />
-                <marker date="1583061191277" expanded="true" signature="2523:2558" ph="///  ... " />
-                <marker date="1583061191277" expanded="true" signature="2590:2826" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="2849:3084" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3108:3148" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3175:3294" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3184:3252" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3340:3541" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3358:3538" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3566:3676" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3705:3840" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="3871:4013" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="4041:4189" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="4232:4364" ph="{...}" />
-                <marker date="1583061191277" expanded="true" signature="4402:4411" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Utility/NumberUtility.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="278">
-              <caret line="20" column="7" lean-forward="true" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-              <folding>
-                <marker date="1583059246483" expanded="true" signature="33:1711" ph="{...}" />
-                <marker date="1583059246483" expanded="true" signature="319:358" ph="{...}" />
-                <marker date="1583059246483" expanded="true" signature="419:458" ph="{...}" />
-                <marker date="1583059246483" expanded="true" signature="521:1709" ph="{...}" />
-                <marker date="1583059246483" expanded="true" signature="581:703" ph="{...}" />
-                <marker date="1583059246483" expanded="true" signature="748:1536" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="4" column="41" lean-forward="true" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
-              <folding>
-                <marker date="1583060812905" expanded="false" signature="6:33" ph="..." />
-                <marker date="1583060812905" expanded="true" signature="76:1136" ph="{...}" />
-                <marker date="1583060812905" expanded="true" signature="80:151" ph="///  ... " />
-                <marker date="1583060812905" expanded="true" signature="235:291" ph="/// Amount of money owned ... " />
-                <marker date="1583060812905" expanded="true" signature="310:535" ph="{...}" />
-                <marker date="1583060812905" expanded="true" signature="344:532" ph="{...}" />
-                <marker date="1583060812905" expanded="true" signature="558:726" ph="{...}" />
-                <marker date="1583060812905" expanded="true" signature="753:827" ph="{...}" />
-                <marker date="1583060812905" expanded="true" signature="869:981" ph="{...}" />
-                <marker date="1583060812905" expanded="true" signature="1023:1134" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -283,31 +120,6 @@
               <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Clothes" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Managers" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Managers" type="1045f7f1:UnityExplorerNode" />
-              <item name="Money" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="Project" type="e068e287:UnityExplorerRootNode" />
-              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
-              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
-              <item name="Utility" type="1045f7f1:UnityExplorerNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -376,12 +188,12 @@
       <workItem from="1581850406673" duration="69000" />
       <workItem from="1581850484521" duration="8355000" />
       <workItem from="1581935981651" duration="450000" />
-      <workItem from="1583057928896" duration="3660000" />
+      <workItem from="1583057928896" duration="4071000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34742000" />
+    <option name="totallyTimeSpent" value="35153000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -394,7 +206,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="56" y="23" width="1384" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28614008" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -962,6 +773,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsUpperInfoDisplayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="22" lean-forward="true" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <marker date="1583061826036" expanded="true" signature="0:59" ph="///  ... " />
+            <marker date="1583061826036" expanded="true" signature="119:558" ph="{...}" />
+            <marker date="1583061826036" expanded="true" signature="194:556" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="44" column="54" lean-forward="true" selection-start-line="44" selection-start-column="54" selection-end-line="44" selection-end-column="54" />
+          <folding>
+            <marker date="1583061682437" expanded="false" signature="6:40" ph="..." />
+            <marker date="1583061682437" expanded="true" signature="89:1386" ph="{...}" />
+            <marker date="1583061682437" expanded="true" signature="93:184" ph="///  ... " />
+            <marker date="1583061682437" expanded="true" signature="233:294" ph="/// Text with info about automatic production at this moment ... " />
+            <marker date="1583061682437" expanded="true" signature="346:437" ph="///  ... " />
+            <marker date="1583061682437" expanded="true" signature="505:590" ph="/// Text with info about automatic production at this moment ... " />
+            <marker date="1583061682437" expanded="true" signature="660:712" ph="{...}" />
+            <marker date="1583061682437" expanded="true" signature="739:791" ph="{...}" />
+            <marker date="1583061682437" expanded="true" signature="794:991" ph="/// Refreshes info about given Clothes. Virtual so names of Clothes can be overriden, ... " />
+            <marker date="1583061682437" expanded="true" signature="1043:1384" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -1019,37 +861,6 @@
             <marker date="1583060125849" expanded="true" signature="271:296" ph="{...}" />
             <marker date="1583060125849" expanded="true" signature="323:371" ph="{...}" />
             <marker date="1583060125849" expanded="true" signature="410:560" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-653">
-          <caret line="11" column="17" lean-forward="true" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <marker date="1583061682437" expanded="false" signature="6:40" ph="..." />
-            <marker date="1583061682437" expanded="true" signature="89:1386" ph="{...}" />
-            <marker date="1583061682437" expanded="true" signature="93:184" ph="///  ... " />
-            <marker date="1583061682437" expanded="true" signature="233:294" ph="/// Text with info about automatic production at this moment ... " />
-            <marker date="1583061682437" expanded="true" signature="346:437" ph="///  ... " />
-            <marker date="1583061682437" expanded="true" signature="505:590" ph="/// Text with info about automatic production at this moment ... " />
-            <marker date="1583061682437" expanded="true" signature="660:712" ph="{...}" />
-            <marker date="1583061682437" expanded="true" signature="739:791" ph="{...}" />
-            <marker date="1583061682437" expanded="true" signature="794:991" ph="/// Refreshes info about given Clothes. Virtual so names of Clothes can be overriden, ... " />
-            <marker date="1583061682437" expanded="true" signature="1043:1384" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/TshirtsUpperInfoDisplayer.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="50" lean-forward="true" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-          <folding>
-            <marker date="1583061778086" expanded="true" signature="0:59" ph="///  ... " />
-            <marker date="1583061778086" expanded="true" signature="119:561" ph="{...}" />
-            <marker date="1583061778086" expanded="true" signature="194:559" ph="{...}" />
           </folding>
         </state>
       </provider>
