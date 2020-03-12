@@ -19,9 +19,11 @@ public class Store : MonoBehaviour
 	/// instance created so we can call non-static method in a delegate
 	/// </summary>
 	private static Store instance;
-
+	
+#pragma warning disable 0649
 	[SerializeField]
 	private List<Clothes> clothes;
+#pragma warning restore 0649
 
 	private Action<int, int> myDelegate = delegate(int amount, int price) { instance.EarnMoney(amount, price); };
 

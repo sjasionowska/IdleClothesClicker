@@ -176,7 +176,9 @@ public abstract class Clothes : MonoBehaviour
 		{
 			moneyManager.AmountChanged -= CheckIfUpgradeCanBeBought;
 		}
+#pragma warning disable 168
 		catch (NullReferenceException e) { }
+#pragma warning restore 168
 	}
 
 	private IEnumerator MakeItemAutomatically()

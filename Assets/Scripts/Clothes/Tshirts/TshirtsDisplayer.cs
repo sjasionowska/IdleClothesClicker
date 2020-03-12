@@ -8,11 +8,15 @@ using UnityEngine.UI;
 /// </summary>
 public class TshirtsDisplayer : MonoBehaviour
 {
+#pragma warning disable 0649
 	[SerializeField]
 	private Tshirts tshirts;
+#pragma warning restore 0649
 
+#pragma warning disable 0649
 	[SerializeField]
 	private UnityEngine.UI.Text amountOnUiText;
+#pragma warning restore 0649
 
 	private int Amount
 	{
@@ -20,7 +24,8 @@ public class TshirtsDisplayer : MonoBehaviour
 	}
 
 	private void Awake()
-	{		Debug.LogFormat("{0} on Awake.", this);
+	{
+		Debug.LogFormat("{0} on Awake.", this);
 
 		tshirts.AmountChanged += Refresh;
 		if (amountOnUiText != null) amountOnUiText.text = Amount.ToString();

@@ -3,11 +3,15 @@ using UnityEngine.UI;
 
 public class UpgradeDisplayer : MonoBehaviour
 {
+#pragma warning disable 0649
 	[SerializeField]
 	private Clothes clothes;
+#pragma warning restore 0649
 
+#pragma warning disable 0649
 	[SerializeField]
 	private Text priceText;
+#pragma warning restore 0649
 
 	private void Awake()
 	{

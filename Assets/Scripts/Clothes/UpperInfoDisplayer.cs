@@ -46,9 +46,9 @@ public class UpperInfoDisplayer : MonoBehaviour
 	{
 		levelOnUiText.text = string.Format("Level {0}", NumberUtility.FormatNumber(level, 3));
 		infoOnAutomaticProductionText.text = string.Format(
-			"{0} {1} / 5 seconds",
+			"{0} {1} / {2} seconds",
 			NumberUtility.FormatNumber(level, 3),
-			clothes.name);
+			clothes.name, NumberUtility.FormatNumber(clothes.ProductionSpeedInversed, 3));
 		infoOnPrice.text = string.Format("{0} $ for 1 {1}", NumberUtility.FormatNumber(level, 3), clothes.name);
 	}
 }
