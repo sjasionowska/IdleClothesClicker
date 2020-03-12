@@ -18,7 +18,7 @@ public abstract class Clothes : MonoBehaviour
 			if (value <= 0)
 				Debug.LogErrorFormat(
 					"You're trying to set level zero or less. Omg, what a shame :facepalm: : '{0}",
-					level);
+					value);
 			else level = value;
 		}
 	}
@@ -44,9 +44,20 @@ public abstract class Clothes : MonoBehaviour
 		}
 	}
 
-	public void Upgrade()
+	/// <summary>
+	/// How fast the production is. This parameter is inversed, so the smaller it is, the faster the production is.
+	/// </summary>
+	public float ProductionSpeedInversed
 	{
-		Level++;
+		get => productionSpeedInversed;
+		private set
+		{
+			if (value <= 0f)
+				Debug.LogErrorFormat(
+					"You're trying to set productionSpeedInversed to zero or less. Omg, what a shame :facepalm: : '{0}",
+					value);
+			else productionSpeedInversed = value;
+		}
 	}
 #endregion
 
@@ -75,9 +86,15 @@ public abstract class Clothes : MonoBehaviour
 	/// </summary>
 	public event Action<int> LevelIncreased;
 
+	/// <summary>
+	/// Button for selling all made Clothes
+	/// </summary>
 	[SerializeField]
 	protected Button sellButton;
 
+	/// <summary>
+	/// Button for making one item
+	/// </summary>
 	[SerializeField]
 	protected Button makeItemButton;
 
@@ -86,7 +103,7 @@ public abstract class Clothes : MonoBehaviour
 	/// </summary>
 	[SerializeField]
 	protected Button upgradeButton;
-	
+
 	/// <summary>
 	/// First button for accelerating production 
 	/// </summary>
@@ -104,13 +121,14 @@ public abstract class Clothes : MonoBehaviour
 	/// </summary>
 	[SerializeField]
 	protected Button accelerateButton3;
-	
+
 	/// <summary>
 	/// Fourth button for accelerating production 
 	/// </summary>
 	[SerializeField]
 	protected Button accelerateButton4;
-	
+
+	private float productionSpeedInversed;
 
 	private MoneyManager moneyManager;
 
@@ -134,6 +152,7 @@ public abstract class Clothes : MonoBehaviour
 	{
 		Debug.LogFormat("{0} on Awake.", this);
 
+		ProductionSpeedInversed = 5f;
 		Level = 1;
 		LevelIncreased?.Invoke(Level);
 		moneyManager = FindObjectOfType<MoneyManager>();
@@ -151,11 +170,6 @@ public abstract class Clothes : MonoBehaviour
 		StartCoroutine(MakeItemAutomatically());
 	}
 
-	private void Update()
-	{
-		// CheckIfUpgradeCanBeBought();
-	}
-
 	private void OnDestroy()
 	{
 		try
@@ -169,12 +183,14 @@ public abstract class Clothes : MonoBehaviour
 	{
 		while (true)
 		{
-			yield return new WaitForSeconds(5);
+			yield return new WaitForSeconds(ProductionSpeedInversed);
 
 			Amount += Level;
 			AmountChanged?.Invoke();
 			Debug.LogFormat("{0} : Item made automatically. New Amount: {1}", this, Amount);
 		}
+
+		// ReSharper disable once IteratorNeverReturns
 	}
 
 	private void SellAll()
@@ -216,8 +232,5 @@ public abstract class Clothes : MonoBehaviour
 		else upgradeButton.interactable = false;
 	}
 
-	private void AccelerateProduction()
-	{
-		
-	}
+	private void AccelerateProduction() { }
 }

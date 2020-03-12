@@ -21,11 +21,11 @@ public class MoneyManager : MonoBehaviour
 		get => amount;
 		private set
 		{
-			amount = value;
-			if (amount < 0)
+			if (value < 0)
 				Debug.LogErrorFormat(
 					"You're trying to set money amount that is less than zero. Omg, what a shame :facepalm: : '{0}",
-					amount);
+					value);
+			else amount = value;
 		}
 	}
 
