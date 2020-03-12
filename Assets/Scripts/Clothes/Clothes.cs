@@ -59,6 +59,46 @@ public abstract class Clothes : MonoBehaviour
 			else productionSpeedInversed = value;
 		}
 	}
+
+	/// <summary>
+	/// Money needed to buy first acceleration update
+	/// </summary>
+	public int MoneyNeedToAccelerate1
+	{
+		get => moneyNeedToAccelerate1;
+	}
+
+	/// <summary>
+	/// Money needed to buy second acceleration update
+	/// </summary>
+	public int MoneyNeedToAccelerate2
+	{
+		get => moneyNeedToAccelerate2;
+	}
+
+	/// <summary>
+	/// Money needed to buy third acceleration update
+	/// </summary>
+	public int MoneyNeedToAccelerate3
+	{
+		get => moneyNeedToAccelerate3;
+	}
+
+	/// <summary>
+	/// Money needed to buy fourth acceleration update
+	/// </summary>
+	public int MoneyNeedToAccelerate4
+	{
+		get => moneyNeedToAccelerate4;
+	}
+
+	/// <summary>
+	/// Money needed to buy fifth acceleration update
+	/// </summary>
+	public int MoneyNeedToAccelerate5
+	{
+		get => moneyNeedToAccelerate5;
+	}
 #endregion
 
 	/// <summary>
@@ -84,7 +124,12 @@ public abstract class Clothes : MonoBehaviour
 	/// <summary>
 	/// Action invoked when Level of items was upgraded
 	/// </summary>
-	public event Action<int> LevelIncreased;
+	public event Action LevelIncreased;
+
+	/// <summary>
+	/// Action invoked when ProductionSpeed is increased
+	/// </summary>
+	public event Action ProductionSpeedIncreased;
 
 	/// <summary>
 	/// Button for selling all made Clothes
@@ -128,6 +173,12 @@ public abstract class Clothes : MonoBehaviour
 	[SerializeField]
 	protected Button accelerateButton4;
 
+	/// <summary>
+	/// Fifth button for accelerating production 
+	/// </summary>
+	[SerializeField]
+	protected Button accelerateButton5;
+
 	private float productionSpeedInversed;
 
 	private MoneyManager moneyManager;
@@ -137,6 +188,26 @@ public abstract class Clothes : MonoBehaviour
 	private int price;
 
 	private int level;
+
+	private int moneyNeedToAccelerate1 = 1000;
+
+	private int moneyNeedToAccelerate2 = 10000;
+
+	private int moneyNeedToAccelerate3 = 100000;
+
+	private int moneyNeedToAccelerate4 = 500000;
+
+	private int moneyNeedToAccelerate5 = 1000000;
+
+	private bool accelerationBought1;
+
+	private bool accelerationBought2;
+
+	private bool accelerationBought3;
+
+	private bool accelerationBought4;
+
+	private bool accelerationBought5;
 
 	private int OwnedMoneyAmount => moneyManager.Amount;
 
@@ -154,10 +225,10 @@ public abstract class Clothes : MonoBehaviour
 
 		ProductionSpeedInversed = 5f;
 		Level = 1;
-		LevelIncreased?.Invoke(Level);
+		LevelIncreased?.Invoke();
 		moneyManager = FindObjectOfType<MoneyManager>();
-		CheckIfUpgradeCanBeBought();
-		moneyManager.AmountChanged += CheckIfUpgradeCanBeBought;
+		CheckIfAnyUpgradeCanBeBought();
+		moneyManager.AmountChanged += CheckIfAnyUpgradeCanBeBought;
 	}
 
 	private void Start()
@@ -167,6 +238,12 @@ public abstract class Clothes : MonoBehaviour
 		sellButton.onClick.AddListener(SellAll);
 		makeItemButton.onClick.AddListener(MakeOneItem);
 		upgradeButton.onClick.AddListener(BuyUpgrade);
+		accelerateButton1.onClick.AddListener(AccelerateProduction1);
+		accelerateButton2.onClick.AddListener(AccelerateProduction2);
+		accelerateButton3.onClick.AddListener(AccelerateProduction3);
+		accelerateButton4.onClick.AddListener(AccelerateProduction4);
+		accelerateButton5.onClick.AddListener(AccelerateProduction5);
+
 		StartCoroutine(MakeItemAutomatically());
 	}
 
@@ -174,7 +251,7 @@ public abstract class Clothes : MonoBehaviour
 	{
 		try
 		{
-			moneyManager.AmountChanged -= CheckIfUpgradeCanBeBought;
+			moneyManager.AmountChanged -= CheckIfAnyUpgradeCanBeBought;
 		}
 #pragma warning disable 168
 		catch (NullReferenceException e) { }
@@ -215,9 +292,9 @@ public abstract class Clothes : MonoBehaviour
 	private void IncreaseLevel()
 	{
 		Level++;
-		LevelIncreased?.Invoke(Level);
+		LevelIncreased?.Invoke();
 		Debug.LogFormat("Level increased. New level: {0}", Level);
-		CheckIfUpgradeCanBeBought();
+		CheckIfAnyUpgradeCanBeBought();
 	}
 
 	private void BuyUpgrade()
@@ -228,11 +305,85 @@ public abstract class Clothes : MonoBehaviour
 		IncreaseLevel();
 	}
 
-	private void CheckIfUpgradeCanBeBought()
+	private void CheckIfAnyUpgradeCanBeBought()
 	{
 		if (OwnedMoneyAmount >= MoneyNeededToUpgrade) upgradeButton.interactable = true;
 		else upgradeButton.interactable = false;
+		if (OwnedMoneyAmount >= MoneyNeedToAccelerate1 && !accelerationBought1) accelerateButton1.interactable = true;
+		else accelerateButton1.interactable = false;
+		if (OwnedMoneyAmount >= MoneyNeedToAccelerate2 && !accelerationBought2) accelerateButton2.interactable = true;
+		else accelerateButton2.interactable = false;
+		if (OwnedMoneyAmount >= MoneyNeedToAccelerate3 && !accelerationBought3) accelerateButton3.interactable = true;
+		else accelerateButton3.interactable = false;
+		if (OwnedMoneyAmount >= MoneyNeedToAccelerate4 && !accelerationBought4) accelerateButton4.interactable = true;
+		else accelerateButton4.interactable = false;
+		if (OwnedMoneyAmount >= MoneyNeedToAccelerate5 && !accelerationBought5) accelerateButton5.interactable = true;
+		else accelerateButton5.interactable = false;
 	}
 
-	private void AccelerateProduction() { }
+	private void AccelerateProduction1()
+	{
+		ProductionSpeedInversed /= 2;
+		accelerationBought1 = true;
+
+		// accelerateButton1.image.color = Color.gray;
+		accelerateButton1.image.color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
+
+		ProductionSpeedIncreased?.Invoke();
+		UpgradeBought?.Invoke(MoneyNeedToAccelerate1);
+
+		CheckIfAnyUpgradeCanBeBought();
+	}
+
+	private void AccelerateProduction2()
+	{
+		ProductionSpeedInversed /= 2;
+		accelerationBought2 = true;
+		accelerateButton2.image.color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
+
+		ProductionSpeedIncreased?.Invoke();
+		UpgradeBought?.Invoke(MoneyNeedToAccelerate2);
+
+		CheckIfAnyUpgradeCanBeBought();
+	}
+
+	private void AccelerateProduction3()
+	{
+		ProductionSpeedInversed /= 2;
+		accelerationBought3 = true;
+		accelerateButton3.image.color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
+
+		ProductionSpeedIncreased?.Invoke();
+		UpgradeBought?.Invoke(MoneyNeedToAccelerate3);
+
+		CheckIfAnyUpgradeCanBeBought();
+	}
+
+	private void AccelerateProduction4()
+	{
+		ProductionSpeedInversed /= 2;
+		accelerationBought4 = true;
+		accelerateButton4.image.color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
+
+		ProductionSpeedIncreased?.Invoke();
+		UpgradeBought?.Invoke(MoneyNeedToAccelerate4);
+
+		CheckIfAnyUpgradeCanBeBought();
+
+		Debug.LogError("You've finished the game!!!!");
+	}
+
+	private void AccelerateProduction5()
+	{
+		ProductionSpeedInversed /= 2;
+		accelerationBought5 = true;
+		accelerateButton5.image.color = new Color(0.5f, 0.5f, 0.5f, 0.3f);
+
+		ProductionSpeedIncreased?.Invoke();
+		UpgradeBought?.Invoke(MoneyNeedToAccelerate5);
+
+		CheckIfAnyUpgradeCanBeBought();
+
+		Debug.LogError("You've finished the game!!!!");
+	}
 }

@@ -1,6 +1,8 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+// ReSharper disable UseStringInterpolation
+
 public class UpperInfoDisplayer : MonoBehaviour
 {
 	/// <summary>
@@ -30,25 +32,30 @@ public class UpperInfoDisplayer : MonoBehaviour
 	private void Awake()
 	{
 		clothes.LevelIncreased += RefreshDisplayer;
+		clothes.ProductionSpeedIncreased += RefreshDisplayer;
 	}
 
 	private void OnDestroy()
 	{
 		clothes.LevelIncreased -= RefreshDisplayer;
+		clothes.ProductionSpeedIncreased -= RefreshDisplayer;
 	}
 
 	/// <summary>
 	/// Refreshes info about given Clothes. Virtual so names of Clothes can be overriden,
 	/// especially for plural and singular forms.
 	/// </summary>
-	/// <param name="level"></param>
-	protected virtual void RefreshDisplayer(int level)
+	protected virtual void RefreshDisplayer()
 	{
+		var level = clothes.Level;
+		var productionSpeedInv = clothes.ProductionSpeedInversed;
+
 		levelOnUiText.text = string.Format("Level {0}", NumberUtility.FormatNumber(level, 3));
 		infoOnAutomaticProductionText.text = string.Format(
 			"{0} {1} / {2} seconds",
 			NumberUtility.FormatNumber(level, 3),
-			clothes.name, NumberUtility.FormatNumber(clothes.ProductionSpeedInversed, 3));
+			clothes.name,
+			NumberUtility.FormatNumber(productionSpeedInv, 3));
 		infoOnPrice.text = string.Format("{0} $ for 1 {1}", NumberUtility.FormatNumber(level, 3), clothes.name);
 	}
 }

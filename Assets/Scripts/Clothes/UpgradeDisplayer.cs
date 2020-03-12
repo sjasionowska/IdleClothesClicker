@@ -20,7 +20,7 @@ public class UpgradeDisplayer : MonoBehaviour
 
 	private void Start()
 	{
-		RefreshPrice(0);
+		RefreshPrice();
 	}
 
 	private void OnDestroy()
@@ -28,9 +28,10 @@ public class UpgradeDisplayer : MonoBehaviour
 		clothes.LevelIncreased -= RefreshPrice;
 	}
 
-	private void RefreshPrice(int level)
+	private void RefreshPrice()
 	{
-		priceText.text = NumberUtility.FormatNumber(clothes.MoneyNeededToUpgrade,3) + " $";
+		priceText.text = NumberUtility.FormatNumber(clothes.MoneyNeededToUpgrade, 3) + " $";
+
 		// priceText.text = clothes.MoneyNeededToUpgrade + "$";
 	}
 }
