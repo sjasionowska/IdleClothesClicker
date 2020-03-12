@@ -132,6 +132,11 @@ public abstract class Clothes : MonoBehaviour
 	public event Action ProductionSpeedIncreased;
 
 	/// <summary>
+	/// Action invoked when every achievement was achieved.
+	/// </summary>
+	public event Action GameFinished;
+
+	/// <summary>
 	/// Button for selling all made Clothes
 	/// </summary>
 	[SerializeField]
@@ -179,9 +184,9 @@ public abstract class Clothes : MonoBehaviour
 	[SerializeField]
 	protected Button accelerateButton5;
 
-	private float productionSpeedInversed;
-
 	private MoneyManager moneyManager;
+
+	private float productionSpeedInversed;
 
 	private int amount;
 
@@ -333,6 +338,8 @@ public abstract class Clothes : MonoBehaviour
 		UpgradeBought?.Invoke(MoneyNeedToAccelerate1);
 
 		CheckIfAnyUpgradeCanBeBought();
+
+		CheckGameFinish();
 	}
 
 	private void AccelerateProduction2()
@@ -345,6 +352,8 @@ public abstract class Clothes : MonoBehaviour
 		UpgradeBought?.Invoke(MoneyNeedToAccelerate2);
 
 		CheckIfAnyUpgradeCanBeBought();
+
+		CheckGameFinish();
 	}
 
 	private void AccelerateProduction3()
@@ -357,6 +366,8 @@ public abstract class Clothes : MonoBehaviour
 		UpgradeBought?.Invoke(MoneyNeedToAccelerate3);
 
 		CheckIfAnyUpgradeCanBeBought();
+
+		CheckGameFinish();
 	}
 
 	private void AccelerateProduction4()
@@ -370,7 +381,7 @@ public abstract class Clothes : MonoBehaviour
 
 		CheckIfAnyUpgradeCanBeBought();
 
-		Debug.LogError("You've finished the game!!!!");
+		CheckGameFinish();
 	}
 
 	private void AccelerateProduction5()
@@ -384,6 +395,19 @@ public abstract class Clothes : MonoBehaviour
 
 		CheckIfAnyUpgradeCanBeBought();
 
-		Debug.LogError("You've finished the game!!!!");
+		CheckGameFinish();
+	}
+
+	public void CheckGameFinish()
+	{
+		if (accelerationBought1 &&
+		    accelerationBought2 &&
+		    accelerationBought3 &&
+		    accelerationBought4 &&
+		    accelerationBought5)
+		{
+			Debug.LogError("You've finished the game!!!!");
+			GameFinished?.Invoke();
+		}
 	}
 }
