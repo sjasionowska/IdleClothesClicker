@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9ba9e4c4-1100-4e67-bc2b-2e85026df5d9" name="Default Changelist" comment="" />
+    <list default="true" id="9ba9e4c4-1100-4e67-bc2b-2e85026df5d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +25,31 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="497">
+              <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+              <folding>
+                <marker date="1581872542655" expanded="false" signature="6:67" ph="..." />
+                <marker date="1581872542655" expanded="true" signature="103:1345" ph="{...}" />
+                <marker date="1581872542655" expanded="true" signature="107:228" ph="/// Action invoked when some money is earned with parameter sending amount of earned money ... " />
+                <marker date="1581872542655" expanded="true" signature="270:365" ph="/// Action invoked when something was bought and money is spent. ... " />
+                <marker date="1581872542655" expanded="true" signature="406:504" ph="/// instance created so we can call non-static method in a delegate ... " />
+                <marker date="1581872542655" expanded="true" signature="722:907" ph="{...}" />
+                <marker date="1581872542655" expanded="true" signature="819:904" ph="{...}" />
+                <marker date="1581872542655" expanded="true" signature="934:1011" ph="{...}" />
+                <marker date="1581872542655" expanded="true" signature="969:1008" ph="{...}" />
+                <marker date="1581872542655" expanded="true" signature="1059:1137" ph="{...}" />
+                <marker date="1581872542655" expanded="true" signature="1179:1260" ph="{...}" />
+                <marker date="1581872542655" expanded="true" signature="1311:1343" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -96,7 +122,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="56" />
     <option name="y" value="23" />
     <option name="width" value="1384" />
@@ -108,6 +134,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="SolutionExplorer">
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
@@ -126,11 +156,7 @@
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
-      <pane id="FileSystemExplorer" />
       <pane id="AssemblyExplorer" />
-      <pane id="SolutionExplorer">
-        <option name="show-all-files" value="false" />
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -188,12 +214,13 @@
       <workItem from="1581850406673" duration="69000" />
       <workItem from="1581850484521" duration="8355000" />
       <workItem from="1581935981651" duration="450000" />
-      <workItem from="1583057928896" duration="4071000" />
+      <workItem from="1583057928896" duration="4348000" />
+      <workItem from="1583944697547" duration="503000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35153000" />
+    <option name="totallyTimeSpent" value="35933000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -205,9 +232,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="23" width="1384" height="877" extended-state="0" />
+    <frame x="53" y="23" width="1385" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28614008" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29039463" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -692,27 +720,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
-          <folding>
-            <marker date="1581872542655" expanded="false" signature="6:67" ph="..." />
-            <marker date="1581872542655" expanded="true" signature="103:1345" ph="{...}" />
-            <marker date="1581872542655" expanded="true" signature="107:228" ph="/// Action invoked when some money is earned with parameter sending amount of earned money ... " />
-            <marker date="1581872542655" expanded="true" signature="270:365" ph="/// Action invoked when something was bought and money is spent. ... " />
-            <marker date="1581872542655" expanded="true" signature="406:504" ph="/// instance created so we can call non-static method in a delegate ... " />
-            <marker date="1581872542655" expanded="true" signature="722:907" ph="{...}" />
-            <marker date="1581872542655" expanded="true" signature="819:904" ph="{...}" />
-            <marker date="1581872542655" expanded="true" signature="934:1011" ph="{...}" />
-            <marker date="1581872542655" expanded="true" signature="969:1008" ph="{...}" />
-            <marker date="1581872542655" expanded="true" signature="1059:1137" ph="{...}" />
-            <marker date="1581872542655" expanded="true" signature="1179:1260" ph="{...}" />
-            <marker date="1581872542655" expanded="true" signature="1311:1343" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -861,6 +868,27 @@
             <marker date="1583060125849" expanded="true" signature="271:296" ph="{...}" />
             <marker date="1583060125849" expanded="true" signature="323:371" ph="{...}" />
             <marker date="1583060125849" expanded="true" signature="410:560" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="497">
+          <caret line="54" column="4" selection-start-line="54" selection-start-column="4" selection-end-line="54" selection-end-column="4" />
+          <folding>
+            <marker date="1581872542655" expanded="false" signature="6:67" ph="..." />
+            <marker date="1581872542655" expanded="true" signature="103:1345" ph="{...}" />
+            <marker date="1581872542655" expanded="true" signature="107:228" ph="/// Action invoked when some money is earned with parameter sending amount of earned money ... " />
+            <marker date="1581872542655" expanded="true" signature="270:365" ph="/// Action invoked when something was bought and money is spent. ... " />
+            <marker date="1581872542655" expanded="true" signature="406:504" ph="/// instance created so we can call non-static method in a delegate ... " />
+            <marker date="1581872542655" expanded="true" signature="722:907" ph="{...}" />
+            <marker date="1581872542655" expanded="true" signature="819:904" ph="{...}" />
+            <marker date="1581872542655" expanded="true" signature="934:1011" ph="{...}" />
+            <marker date="1581872542655" expanded="true" signature="969:1008" ph="{...}" />
+            <marker date="1581872542655" expanded="true" signature="1059:1137" ph="{...}" />
+            <marker date="1581872542655" expanded="true" signature="1179:1260" ph="{...}" />
+            <marker date="1581872542655" expanded="true" signature="1311:1343" ph="{...}" />
           </folding>
         </state>
       </provider>
