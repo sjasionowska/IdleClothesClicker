@@ -12,9 +12,11 @@
         <e p="Scripts" t="Include">
           <e p="Clothes" t="Include">
             <e p="Clothes.cs" t="Include" />
-            <e p="Tshirts.cs" t="Include" />
-            <e p="TshirtsDisplayer.cs" t="Include" />
-            <e p="TshirtsUpperInfoDisplayer.cs" t="Include" />
+            <e p="Tshirts" t="Include">
+              <e p="Tshirts.cs" t="Include" />
+              <e p="TshirtsDisplayer.cs" t="Include" />
+              <e p="TshirtsUpperInfoDisplayer.cs" t="Include" />
+            </e>
             <e p="UpgradeDisplayer.cs" t="Include" />
             <e p="UpperInfoDisplayer.cs" t="Include" />
           </e>
