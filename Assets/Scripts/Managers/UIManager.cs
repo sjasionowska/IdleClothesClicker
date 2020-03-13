@@ -7,9 +7,8 @@ using UnityEngine;
 public class UIManager : MonoBehaviour
 {
 	public event Action GameStarted;
+
 	public event Action GameFinished;
-	
-	
 
 #pragma warning disable 0649
 	[SerializeField]
@@ -55,6 +54,7 @@ public class UIManager : MonoBehaviour
 	private void ShowEndScreen()
 	{
 		endWindow.Show();
+		InformAboutGameStop();
 	}
 
 	private void ShowStartScreen()

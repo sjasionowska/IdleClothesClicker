@@ -33,7 +33,7 @@ public class MoneyManager : MonoBehaviour
 	{
 		Debug.LogFormat("{0} on Awake.", this);
 
-		Amount = 0;
+		Amount = 2147483640;
 		store = FindObjectOfType<Store>();
 		store.MoneyEarned += EarnMoney;
 		store.MoneySpent += SpendMoney;

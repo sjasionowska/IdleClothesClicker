@@ -49,13 +49,13 @@ public class UpperInfoDisplayer : MonoBehaviour
 	{
 		var level = clothes.Level;
 		var productionSpeedInv = clothes.ProductionSpeedInversed;
+		var speed = level / productionSpeedInv;
 
 		levelOnUiText.text = string.Format("Level {0}", NumberUtility.FormatNumber(level, 3));
 		infoOnAutomaticProductionText.text = string.Format(
-			"{0} {1} / {2} seconds",
-			NumberUtility.FormatNumber(level, 3),
-			clothes.name,
-			NumberUtility.FormatNumber(productionSpeedInv, 3));
+			"{0} {1} / second",
+			NumberUtility.FormatNumber(speed, 3),
+			clothes.name);
 		infoOnPrice.text = string.Format("{0} $ for 1 {1}", NumberUtility.FormatNumber(level, 3), clothes.name);
 	}
 }
