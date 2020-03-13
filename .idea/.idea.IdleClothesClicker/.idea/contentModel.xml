@@ -26,6 +26,12 @@
               <e p="MoneyManager.cs" t="Include" />
             </e>
             <e p="Store.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="EndWindow.cs" t="Include" />
+            <e p="StartWindow.cs" t="Include" />
+            <e p="Window.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="NumberUtility.cs" t="Include" />

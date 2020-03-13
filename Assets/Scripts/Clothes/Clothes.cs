@@ -186,6 +186,8 @@ public abstract class Clothes : MonoBehaviour
 
 	private MoneyManager moneyManager;
 
+	private UIManager uiManager;
+
 	private float productionSpeedInversed;
 
 	private int amount;
@@ -232,8 +234,11 @@ public abstract class Clothes : MonoBehaviour
 		Level = 1;
 		LevelIncreased?.Invoke();
 		moneyManager = FindObjectOfType<MoneyManager>();
+		uiManager = FindObjectOfType<UIManager>();
 		CheckIfAnyUpgradeCanBeBought();
 		moneyManager.AmountChanged += CheckIfAnyUpgradeCanBeBought;
+		uiManager.GameStarted += StartGame;
+		uiManager.GameFinished += StopGame;
 	}
 
 	private void Start()
@@ -248,8 +253,6 @@ public abstract class Clothes : MonoBehaviour
 		accelerateButton3.onClick.AddListener(AccelerateProduction3);
 		accelerateButton4.onClick.AddListener(AccelerateProduction4);
 		accelerateButton5.onClick.AddListener(AccelerateProduction5);
-
-		StartCoroutine(MakeItemAutomatically());
 	}
 
 	private void OnDestroy()
@@ -261,6 +264,32 @@ public abstract class Clothes : MonoBehaviour
 #pragma warning disable 168
 		catch (NullReferenceException e) { }
 #pragma warning restore 168
+
+		try
+		{
+			uiManager.GameStarted -= StartGame;
+		}
+#pragma warning disable 168
+		catch (NullReferenceException e) { }
+#pragma warning restore 168	
+
+		try
+		{
+			uiManager.GameFinished -= StopGame;
+		}
+#pragma warning disable 168
+		catch (NullReferenceException e) { }
+#pragma warning restore 168
+	}
+
+	private void StartGame()
+	{
+		StartCoroutine(MakeItemAutomatically());
+	}
+
+	private void StopGame()
+	{
+		StopAllCoroutines();
 	}
 
 	private IEnumerator MakeItemAutomatically()
@@ -398,6 +427,9 @@ public abstract class Clothes : MonoBehaviour
 		CheckGameFinish();
 	}
 
+	/// <summary>
+	/// Checks if game is finished and if yes, invokes the event
+	/// </summary>
 	public void CheckGameFinish()
 	{
 		if (accelerationBought1 &&
