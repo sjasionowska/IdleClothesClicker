@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ContentModelStore">
     <e p="$USER_HOME$/.gitignore_global" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/extResources" t="IncludeRecursive" />
-    <e p="$USER_HOME$/Library/Caches/Rider2018.3/resharper-host/local/Transient/ReSharperHost/v183/SolutionCaches/_IdleClothesClicker.-1456896643.00" t="ExcludeRecursive" />
     <e p="$APPLICATION_CONFIG_DIR$/extensions" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/JetBrains/Rider2020.1/resharper-host/local/Transient/ReSharperHost/v201/SolutionCaches/_IdleClothesClicker.-1456896643.00" t="ExcludeRecursive" />
     <e p="$PROJECT_DIR$" t="IncludeRecursive">
       <e p=".git/info/exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -34,17 +34,15 @@
             <e p="Window.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
+            <e p="BigIntegerUtility.cs" t="Include" />
             <e p="NumberUtility.cs" t="Include" />
           </e>
         </e>
       </e>
       <e p="IdleClothesClicker.sln" t="IncludeFlat" />
-      <e p="Library" t="ExcludeRecursive" />
       <e p="obj" t="ExcludeRecursive" />
       <e p="packages" t="ExcludeRecursive" />
-      <e p="Temp" t="ExcludeRecursive">
-        <e p="bin" t="ExcludeRecursive" />
-      </e>
+      <e p="Temp/bin" t="ExcludeRecursive" />
     </e>
   </component>
 </project>

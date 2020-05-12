@@ -3,8 +3,8 @@
 /// </summary>
 public static class NumberUtility
 {
-	private static string[] shortExponents =
-		{"", "k", "M", "B", "T", "Q", "aa", "bb", "cc", "dd", "ee", "ff", "gg", "hh", "ii"};
+	private static string[] exponents =
+		{"", "k", "M", "B", "Q"};
 
 	/// <summary>
 	/// Format number with a given number of digits after a comma using engineering notation.
@@ -19,7 +19,7 @@ public static class NumberUtility
 		while (number / 1000 > 1)
 		{
 			exponentsCounter++;
-			if (exponentsCounter >= shortExponents.Length) exponentsCounter = 0;
+			if (exponentsCounter >= exponents.Length) exponentsCounter = 0;
 			number /= 1000;
 		}
 
@@ -52,6 +52,6 @@ public static class NumberUtility
 				break;
 		}
 
-		return numberAsString + shortExponents[exponentsCounter];
+		return numberAsString + exponents[exponentsCounter];
 	}
 }
