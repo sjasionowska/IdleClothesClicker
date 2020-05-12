@@ -3496,7 +3496,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "1. Click on the t-shirt to make it. \n2. At the beginning t-shirts are
+  m_Text: "1. Click on the t-shirt to make one. \n2. At the beginning t-shirts are
     made once in five seconds. You can accelerate the production twice using Accelerate
     production buttons. \n3. Upgrade button increases the level, price of one t-shirt
     and proportional amount of t-shirts made in one second. \n4. You win the game
