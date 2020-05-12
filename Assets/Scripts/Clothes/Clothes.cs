@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
-using System.Numerics;
+
+using BigInteger = System.Numerics.BigInteger;
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -224,7 +225,6 @@ public abstract class Clothes : MonoBehaviour
 	/// </summary>
 	public int MoneyNeededToUpgrade => (int)(Level * Level * Level + 0.1 * (Level + Level));
 
-
 	/// <summary>
 	/// Unity's Awake method.
 	/// </summary>
@@ -273,7 +273,7 @@ public abstract class Clothes : MonoBehaviour
 		}
 #pragma warning disable 168
 		catch (NullReferenceException e) { }
-#pragma warning restore 168	
+#pragma warning restore 168
 
 		try
 		{
@@ -327,8 +327,7 @@ public abstract class Clothes : MonoBehaviour
 
 	private void IncreaseLevel()
 	{
-		// todo: change before release
-		Level+=10;
+		Level++;
 		LevelIncreased?.Invoke();
 		Debug.LogFormat("Level increased. New level: {0}", Level);
 		CheckIfAnyUpgradeCanBeBought();
