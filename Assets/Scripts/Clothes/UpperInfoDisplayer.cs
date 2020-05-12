@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-// ReSharper disable UseStringInterpolation
 
 public class UpperInfoDisplayer : MonoBehaviour
 {

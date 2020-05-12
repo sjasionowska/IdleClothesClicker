@@ -219,12 +219,13 @@ public abstract class Clothes : MonoBehaviour
 	private int OwnedMoneyAmount => moneyManager.Amount;
 
 	/// <summary>
-	/// Money needed to buy an upgrade
+	/// Money needed to buy an upgrade.
 	/// </summary>
 	public int MoneyNeededToUpgrade => (int)(Level * Level * Level + 0.1 * (Level + Level));
 
+
 	/// <summary>
-	/// 
+	/// Unity's Awake method.
 	/// </summary>
 	protected virtual void Awake()
 	{
@@ -325,7 +326,8 @@ public abstract class Clothes : MonoBehaviour
 
 	private void IncreaseLevel()
 	{
-		Level++;
+		// todo: change before release
+		Level+=10;
 		LevelIncreased?.Invoke();
 		Debug.LogFormat("Level increased. New level: {0}", Level);
 		CheckIfAnyUpgradeCanBeBought();

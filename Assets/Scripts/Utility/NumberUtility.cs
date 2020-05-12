@@ -1,23 +1,17 @@
+/// <summary>
+/// Class responsible for displaying numbers using engineering notation.
+/// </summary>
 public static class NumberUtility
 {
-	private static int currentMoneyExponentCounter;
-
-	private static string currentMoneyExponent;
-
 	private static string[] shortExponents =
 		{"", "k", "M", "B", "T", "Q", "aa", "bb", "cc", "dd", "ee", "ff", "gg", "hh", "ii"};
 
-	public static void DecreaseCurrentMoneyExponentCounter()
-	{
-		currentMoneyExponentCounter--;
-	}
-
-	
-	public static void IncreaseCurrentMoneyExponentCounter()
-	{
-		currentMoneyExponentCounter++;
-	}
-
+	/// <summary>
+	/// Format number with a given number of digits after a comma using engineering notation.
+	/// </summary>
+	/// <param name="number">Number to format.</param>
+	/// <param name="digits">Indicates how many digits should be presented after a comma.</param>
+	/// <returns></returns>
 	public static string FormatNumber(double number, int digits)
 	{
 		int exponentsCounter = 0;
@@ -34,32 +28,30 @@ public static class NumberUtility
 		switch (digits)
 		{
 			case 3:
-				numberAsString = string.Format("{0:F3}", number).Contains(".")
-					? string.Format("{0:F3}", number).TrimEnd('0').TrimEnd('.')
-					: string.Format("{0:F3}", number);
+				numberAsString = $"{number:F3}".Contains(".")
+					? $"{number:F3}".TrimEnd('0').TrimEnd('.')
+					: $"{number:F3}";
 				break;
 
 			case 2:
-				numberAsString = string.Format("{0:F2}", number).Contains(".")
-					? string.Format("{0:F2}", number).TrimEnd('0').TrimEnd('.')
-					: string.Format("{0:F2}", number);
+				numberAsString = $"{number:F2}".Contains(".")
+					? $"{number:F2}".TrimEnd('0').TrimEnd('.')
+					: $"{number:F2}";
 				break;
 
 			case 1:
-				numberAsString = string.Format("{0:F1}", number).Contains(".")
-					? string.Format("{0:F1}", number).TrimEnd('0').TrimEnd('.')
-					: string.Format("{0:F1}", number);
+				numberAsString = $"{number:F1}".Contains(".")
+					? $"{number:F1}".TrimEnd('0').TrimEnd('.')
+					: $"{number:F1}";
 				break;
 
 			default:
-				numberAsString = string.Format("{0:F0}", number).Contains(".")
-					? string.Format("{0:F0}", number).TrimEnd('0').TrimEnd('.')
-					: string.Format("{0:F0}", number);
+				numberAsString = $"{number:F0}".Contains(".")
+					? $"{number:F0}".TrimEnd('0').TrimEnd('.')
+					: $"{number:F0}";
 				break;
 		}
 
-		currentMoneyExponentCounter = exponentsCounter;
-		currentMoneyExponent = shortExponents[exponentsCounter];
 		return numberAsString + shortExponents[exponentsCounter];
 	}
 }

@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
+/// <summary>
+/// Class responsible for earning and spending money. 
+/// </summary>
 public class Store : MonoBehaviour
 {
 	/// <summary>

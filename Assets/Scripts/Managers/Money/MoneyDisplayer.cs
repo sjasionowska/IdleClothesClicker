@@ -4,6 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Class used for displaying money amount on the UI.
+/// </summary>
 public class MoneyDisplayer : MonoBehaviour
 {
 #pragma warning disable 0649

@@ -4,10 +4,19 @@ using System.Collections.Generic;
 
 using UnityEngine;
 
+/// <summary>
+/// Class used for managing UI windows.
+/// </summary>
 public class UIManager : MonoBehaviour
 {
+	/// <summary>
+	/// Invoked when game is started.
+	/// </summary>
 	public event Action GameStarted;
 
+	/// <summary>
+	/// Invoked when game is finished.
+	/// </summary>
 	public event Action GameFinished;
 
 #pragma warning disable 0649

@@ -1,6 +1,9 @@
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Class used for displaying upgrade information.
+/// </summary>
 public class UpgradeDisplayer : MonoBehaviour
 {
 #pragma warning disable 0649
