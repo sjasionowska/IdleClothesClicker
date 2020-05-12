@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Numerics;
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -216,7 +217,7 @@ public abstract class Clothes : MonoBehaviour
 
 	private bool accelerationBought5;
 
-	private int OwnedMoneyAmount => moneyManager.Amount;
+	private BigInteger OwnedMoneyAmount => moneyManager.Amount;
 
 	/// <summary>
 	/// Money needed to buy an upgrade.

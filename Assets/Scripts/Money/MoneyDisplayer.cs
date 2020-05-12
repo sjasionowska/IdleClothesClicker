@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Numerics;
 
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,7 +18,7 @@ public class MoneyDisplayer : MonoBehaviour
 	private MoneyManager moneyManager;
 #pragma warning restore 0649
 
-	private int Amount => moneyManager.Amount;
+	private BigInteger Amount => moneyManager.Amount;
 
 	private void Awake()
 	{
@@ -38,7 +37,7 @@ public class MoneyDisplayer : MonoBehaviour
 
 	private void RefreshMoneyAmount()
 	{
-		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = NumberUtility.FormatNumber(Amount, 3) + " $";
+		if (moneyAmountOnUiText != null) moneyAmountOnUiText.text = BigIntegerUtility.FormatWithSuffix(Amount) + " $";
 		else Debug.LogError("moneyAmountOnUiText is null!");
 	}
 }

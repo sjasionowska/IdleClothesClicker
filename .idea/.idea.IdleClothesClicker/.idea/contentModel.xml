@@ -14,23 +14,23 @@
             <e p="Clothes.cs" t="Include" />
             <e p="Tshirts" t="Include">
               <e p="Tshirts.cs" t="Include" />
-              <e p="TshirtsDisplayer.cs" t="Include" />
-              <e p="TshirtsUpperInfoDisplayer.cs" t="Include" />
+              <e p="UI" t="Include">
+                <e p="TshirtsDisplayer.cs" t="Include" />
+                <e p="TshirtsUpperInfoDisplayer.cs" t="Include" />
+                <e p="UpgradeDisplayer.cs" t="Include" />
+              </e>
             </e>
-            <e p="UpgradeDisplayer.cs" t="Include" />
             <e p="UpperInfoDisplayer.cs" t="Include" />
           </e>
-          <e p="Managers" t="Include">
-            <e p="Money" t="Include">
-              <e p="MoneyDisplayer.cs" t="Include" />
-              <e p="MoneyManager.cs" t="Include" />
-            </e>
+          <e p="Money" t="Include">
+            <e p="MoneyDisplayer.cs" t="Include" />
+            <e p="MoneyManager.cs" t="Include" />
             <e p="Store.cs" t="Include" />
-            <e p="UIManager.cs" t="Include" />
           </e>
-          <e p="UI" t="Include">
+          <e p="UI Windows" t="Include">
             <e p="EndWindow.cs" t="Include" />
             <e p="StartWindow.cs" t="Include" />
+            <e p="UIManager.cs" t="Include" />
             <e p="Window.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">

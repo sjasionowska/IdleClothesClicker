@@ -14,7 +14,7 @@ public static class NumberUtility
 	/// <returns></returns>
 	public static string FormatNumber(double number, int digits)
 	{
-		int exponentsCounter = 0;
+		var exponentsCounter = 0;
 
 		while (number / 1000 > 1)
 		{

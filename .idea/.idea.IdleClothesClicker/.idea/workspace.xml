@@ -25,15 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ba9e4c4-1100-4e67-bc2b-2e85026df5d9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.IdleClothesClicker/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/NumberUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/NumberUtility.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Utility/BigIntegerUtility.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/BigIntegerUtility.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +75,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts/TshirtsDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts/TshirtsUpperInfoDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/BigIntegerUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Utility/NumberUtility.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -121,14 +117,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/EndWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/StartWindow.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/Tshirts/TshirtsUpperInfoDisplayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/NumberUtility.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/UIManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/UpgradeDisplayer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Store.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/UpperInfoDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/BigIntegerUtility.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Managers/Money/MoneyDisplayer.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" />
       </list>
     </option>
   </component>
@@ -273,13 +270,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs</url>
-          <line>299</line>
+          <line>300</line>
           <properties documentPath="$PROJECT_DIR$/Assets/Scripts/Clothes/Clothes.cs" initialLine="298">
             <startOffsets>
-              <option value="6444" />
+              <option value="6474" />
             </startOffsets>
             <endOffsets>
-              <option value="6501" />
+              <option value="6531" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="10" />

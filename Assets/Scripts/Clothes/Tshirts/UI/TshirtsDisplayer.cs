@@ -28,7 +28,7 @@ public class TshirtsDisplayer : MonoBehaviour
 		Debug.LogFormat("{0} on Awake.", this);
 
 		tshirts.AmountChanged += Refresh;
-		if (amountOnUiText != null) amountOnUiText.text = Amount.ToString();
+		if (amountOnUiText != null) amountOnUiText.text = NumberUtility.FormatNumber(Amount, 3);
 		else Debug.LogError("amountOnUiText is null!");
 	}
 

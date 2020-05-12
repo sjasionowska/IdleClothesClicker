@@ -1,4 +1,5 @@
 using System;
+using System.Numerics;
 
 using UnityEngine;
 
@@ -11,12 +12,12 @@ public class MoneyManager : MonoBehaviour
 
 	private Store store;
 
-	private int amount;
+	private BigInteger amount;
 
 	/// <summary>
 	/// Amount of money owned
 	/// </summary>
-	public int Amount
+	public BigInteger Amount
 	{
 		get => amount;
 		private set
@@ -34,7 +35,7 @@ public class MoneyManager : MonoBehaviour
 		Debug.LogFormat("{0} on Awake.", this);
 
 		// Amount = 2147483640;
-		Amount = 0;
+		Amount = new BigInteger(0);
 
 		store = FindObjectOfType<Store>();
 		store.MoneyEarned += EarnMoney;
